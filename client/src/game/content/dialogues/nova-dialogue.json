@@ -1,0 +1,38 @@
+{
+  "id": "nova-dialogue",
+  "npcId": "nova",
+  "speaker": "Nova",
+  "rootNodeId": "root",
+  "entryPoints": [
+    {
+      "id": "default",
+      "nodeId": "root",
+      "repeatable": true,
+      "conditions": {}
+    }
+  ],
+  "nodes": [
+    {
+      "id": "root",
+      "text": "Reflex Ring hizli ama temiz bir mini-oyun. Isaret hedef bolgeye girdiginde tusla. Orta seviye coin ve XP odul prototipi var.",
+      "choices": [
+        {
+          "id": "start-reaction",
+          "text": "Reflex Ring'i baslat",
+          "close": true,
+          "repeatable": true,
+          "action": {
+            "type": "start-minigame",
+            "miniGameId": "reaction"
+          }
+        },
+        {
+          "id": "leave",
+          "text": "Belki sonra",
+          "close": true,
+          "repeatable": true
+        }
+      ]
+    }
+  ]
+}

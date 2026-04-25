@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Quest Line",
+  "type": "object",
+  "required": ["id", "npcId", "roomId", "quests"],
+  "properties": {
+    "id": { "type": "string" },
+    "npcId": { "type": "string" },
+    "roomId": { "type": "string" },
+    "position": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      }
+    },
+    "dialogue": { "type": "object" },
+    "eventTags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "quests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "description", "objectives", "rewards"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "prerequisites": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "objectives": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "targetLabel"],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["go-to-location", "collect-item", "open-chest", "talk-to-npc"]
+                },
+                "targetLabel": { "type": "string" }
+              }
+            }
+          },
+          "rewards": { "type": "object" },
+          "dialogueLinks": { "type": "object" }
+        }
+      }
+    }
+  }
+}

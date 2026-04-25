@@ -1,0 +1,47 @@
+{
+  "id": "moon-cafe-counter",
+  "npcId": "baris",
+  "roomId": "cafe",
+  "position": {
+    "x": 504,
+    "y": 408
+  },
+  "title": "Moon Cafe Shop",
+  "greeting": "Tezgah acik. Yeni gelenler icin uygun fiyatli kahve, temel gorev esyalari ve secili kozmetikler burada.",
+  "items": [
+    {
+      "id": "shop-coffee",
+      "itemId": "coffee",
+      "label": "Sicak Kahve",
+      "price": 5,
+      "amount": 1,
+      "category": "consumables"
+    },
+    {
+      "id": "shop-key",
+      "itemId": "key",
+      "label": "Yedek Anahtar",
+      "price": 14,
+      "amount": 1,
+      "category": "quest-items"
+    },
+    {
+      "id": "shop-gift-box",
+      "itemId": "giftBox",
+      "label": "Hediye Kutusu",
+      "price": 20,
+      "amount": 1,
+      "category": "quest-items"
+    },
+    {
+      "id": "shop-cafe-glasses",
+      "itemId": "glasses",
+      "label": "Kafe Gozlugu",
+      "price": 32,
+      "amount": 1,
+      "kind": "cosmetic",
+      "cosmeticSlot": "accessory",
+      "category": "cosmetics"
+    }
+  ]
+}

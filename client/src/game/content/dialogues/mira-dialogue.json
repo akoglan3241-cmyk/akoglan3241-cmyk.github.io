@@ -1,0 +1,101 @@
+{
+  "id": "mira-dialogue",
+  "npcId": "mira",
+  "speaker": "Mira",
+  "entryPoints": [
+    {
+      "id": "mira-visit-offer",
+      "nodeId": "visit-offer",
+      "conditions": {
+        "questStatus": "available",
+        "questId": "visit-fountain"
+      }
+    },
+    {
+      "id": "mira-visit-progress",
+      "nodeId": "visit-progress",
+      "conditions": {
+        "questStatus": "active",
+        "questId": "visit-fountain"
+      }
+    },
+    {
+      "id": "mira-visit-complete",
+      "nodeId": "visit-complete",
+      "conditions": {
+        "questStatus": "completed",
+        "questId": "visit-fountain"
+      }
+    },
+    {
+      "id": "mira-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Pazar yeni kuruldu. Aksam olmadan lonca meydanina da ugrarsan herkesle tanisirsin.",
+      "choices": [
+        {
+          "id": "mira-default-close",
+          "text": "Tesekkurler",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "visit-offer",
+      "text": "Kasaba meydanindaki cesmeye git. Orasi herkesin bulusma noktasi. Donunce sana 25 coin verecegim.",
+      "choices": [
+        {
+          "id": "mira-accept-visit",
+          "text": "Gorevi aliyorum",
+          "action": {
+            "type": "start-quest",
+            "questId": "visit-fountain"
+          },
+          "nextNodeId": "visit-accepted"
+        },
+        {
+          "id": "mira-decline-visit",
+          "text": "Birazdan bakarim",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "visit-accepted",
+      "text": "Harika. Cesmeye bir kez ugraman yeterli, sonra yolunu bulmak daha kolay gelecek.",
+      "choices": [
+        {
+          "id": "mira-accepted-close",
+          "text": "Yola cikiyorum",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "visit-progress",
+      "text": "Cesme hemen meydanin ortasinda. Oraya gidip kasabanin akisini gor.",
+      "choices": [
+        {
+          "id": "mira-progress-close",
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "visit-complete",
+      "text": "Meydan yolunu ogrendin. Simdi istersen Moon Cafe'ye ugrayip ilk kahveni alip kasabanin sosyal akisini gorebilirsin.",
+      "choices": [
+        {
+          "id": "mira-complete-close",
+          "text": "Devam edelim",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

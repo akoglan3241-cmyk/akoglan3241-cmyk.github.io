@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Room Map Collection",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "required": ["id", "name", "width", "height", "spawn", "npcs", "pickups", "chests", "portals"],
+    "properties": {
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "width": { "type": "number" },
+      "height": { "type": "number" },
+      "spawn": {
+        "type": "object",
+        "required": ["x", "y"],
+        "properties": {
+          "x": { "type": "number" },
+          "y": { "type": "number" }
+        }
+      },
+      "npcs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "name", "x", "y"]
+        }
+      },
+      "pickups": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "itemId", "amount", "x", "y"]
+        }
+      },
+      "chests": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "x", "y", "lootTableId"]
+        }
+      },
+      "portals": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "x", "y", "targetRoomId"]
+        }
+      }
+    }
+  }
+}

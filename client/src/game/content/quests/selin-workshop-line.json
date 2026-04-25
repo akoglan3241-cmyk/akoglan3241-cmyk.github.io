@@ -1,0 +1,52 @@
+{
+  "id": "selin-workshop-line",
+  "npcId": "selin",
+  "roomId": "town",
+  "position": {
+    "x": 1128,
+    "y": 696
+  },
+  "dialogue": {
+    "entries": {
+      "default": "Atolye her zaman acik. Yeni gelenler genelde once isimlerini duyurur, sonra ekip kurmaya baslar.",
+      "locked_open_workshop_chest": "Toren'in anahtar isini bitirince bana gel. Atolyede o zaman bir seyler acariz.",
+      "offer_open_workshop_chest": "Workshop yanindaki sandigi anahtarla ac. Icindekileri getirirsen sana 40 coin ve bir hediye kutusu verecegim.",
+      "in_progress_open_workshop_chest": "Sandik workshop'un yaninda duruyor. Anahtar sende olmali.",
+      "completed_open_workshop_chest": "Atolye sandigini acman iyi oldu. Artik gercek bir kasabali gibi davranmaya basladin."
+    }
+  },
+  "quests": [
+    {
+      "id": "open-workshop-chest",
+      "title": "Atolye Sandigini Ac",
+      "description": "Workshop yanindaki sandigi bul ve anahtarla ac.",
+      "prerequisites": [
+        "find-old-key"
+      ],
+      "objectives": [
+        {
+          "type": "open-chest",
+          "targetLabel": "Workshop Sandigi",
+          "chestId": "chest-workshop"
+        }
+      ],
+      "rewards": {
+        "coins": 50,
+        "xp": 95,
+        "items": [
+          {
+            "itemId": "giftBox",
+            "amount": 1
+          }
+        ]
+      },
+      "dialogueLinks": {
+        "default": "default",
+        "locked": "locked_open_workshop_chest",
+        "offer": "offer_open_workshop_chest",
+        "inProgress": "in_progress_open_workshop_chest",
+        "completed": "completed_open_workshop_chest"
+      }
+    }
+  ]
+}

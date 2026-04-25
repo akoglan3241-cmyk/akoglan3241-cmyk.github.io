@@ -1,0 +1,42 @@
+[
+  {
+    "id": "workshop-supplies",
+    "rolls": 2,
+    "entries": [
+      { "id": "workshop-coins", "kind": "inventory", "itemId": "coin", "weight": 10, "minAmount": 12, "maxAmount": 20 },
+      { "id": "workshop-gift", "kind": "inventory", "itemId": "giftBox", "weight": 3, "minAmount": 1, "maxAmount": 1 },
+      { "id": "workshop-coffee", "kind": "inventory", "itemId": "coffee", "weight": 3, "minAmount": 1, "maxAmount": 2 },
+      { "id": "workshop-flower", "kind": "cosmetic", "itemId": "flower", "cosmeticSlot": "accessory", "weight": 1, "minAmount": 1, "maxAmount": 1 }
+    ]
+  },
+  {
+    "id": "home-stash",
+    "rolls": 2,
+    "entries": [
+      { "id": "home-coins", "kind": "inventory", "itemId": "coin", "weight": 10, "minAmount": 6, "maxAmount": 10 },
+      { "id": "home-coffee", "kind": "inventory", "itemId": "coffee", "weight": 5, "minAmount": 1, "maxAmount": 2 },
+      { "id": "home-key", "kind": "inventory", "itemId": "key", "weight": 2, "minAmount": 1, "maxAmount": 1 }
+    ]
+  },
+  {
+    "id": "beach-cache",
+    "rolls": 2,
+    "entries": [
+      { "id": "beach-coins", "kind": "inventory", "itemId": "coin", "weight": 10, "minAmount": 8, "maxAmount": 14 },
+      { "id": "beach-gift", "kind": "inventory", "itemId": "giftBox", "weight": 3, "minAmount": 1, "maxAmount": 1 },
+      { "id": "beach-coffee", "kind": "inventory", "itemId": "coffee", "weight": 3, "minAmount": 1, "maxAmount": 1 },
+      { "id": "beach-glasses", "kind": "cosmetic", "itemId": "glasses", "cosmeticSlot": "accessory", "weight": 1, "minAmount": 1, "maxAmount": 1, "eventTags": ["summer"] }
+    ]
+  },
+  {
+    "id": "event-supply-drop",
+    "rolls": 3,
+    "entries": [
+      { "id": "event-coins", "kind": "inventory", "itemId": "coin", "weight": 11, "minAmount": 14, "maxAmount": 22 },
+      { "id": "event-coffee", "kind": "inventory", "itemId": "coffee", "weight": 5, "minAmount": 1, "maxAmount": 2 },
+      { "id": "event-gift", "kind": "inventory", "itemId": "giftBox", "weight": 3, "minAmount": 1, "maxAmount": 1 },
+      { "id": "event-golden-key", "kind": "inventory", "itemId": "goldenKey", "weight": 1, "minAmount": 1, "maxAmount": 1 },
+      { "id": "event-special-gift", "kind": "inventory", "itemId": "specialGift", "weight": 1, "minAmount": 1, "maxAmount": 1 }
+    ]
+  }
+]

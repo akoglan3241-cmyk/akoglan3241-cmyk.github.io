@@ -1,0 +1,96 @@
+{
+  "id": "iris-dialogue",
+  "npcId": "iris",
+  "speaker": "Iris",
+  "eventTags": ["spring-bloom"],
+  "entryPoints": [
+    {
+      "id": "iris-offer",
+      "nodeId": "offer",
+      "conditions": {
+        "questStatus": "available",
+        "questId": "spring-bloom-prep"
+      }
+    },
+    {
+      "id": "iris-progress",
+      "nodeId": "progress",
+      "conditions": {
+        "questStatus": "active",
+        "questId": "spring-bloom-prep"
+      }
+    },
+    {
+      "id": "iris-complete",
+      "nodeId": "complete",
+      "conditions": {
+        "questStatus": "completed",
+        "questId": "spring-bloom-prep"
+      }
+    },
+    {
+      "id": "iris-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Festival boyunca cicekler ve hediyeler kasabanin her yerine yayilir.",
+      "choices": [
+        {
+          "text": "Ne guzel",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "offer",
+      "text": "Kutlama standi icin iki hediye kutusu toplarsan sana ozel bir bahar arma gani verecegim.",
+      "choices": [
+        {
+          "text": "Toplayacagim",
+          "action": {
+            "type": "start-quest",
+            "questId": "spring-bloom-prep"
+          },
+          "nextNodeId": "accepted"
+        },
+        {
+          "text": "Sonra gelirim",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "accepted",
+      "text": "Harika. Iki kutu yeterli, sonra standi acabiliriz.",
+      "choices": [
+        {
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "text": "Kasaba ve sahilde kalan hediye kutularina bak. Stand neredeyse hazir.",
+      "choices": [
+        {
+          "text": "Aramaya devam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "complete",
+      "text": "Standi actik. Bu ozel bahar odulu senin icin.",
+      "choices": [
+        {
+          "text": "Tesekkurler",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

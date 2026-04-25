@@ -1,0 +1,45 @@
+{
+  "id": "lina-beach-line",
+  "npcId": "lina",
+  "roomId": "beach",
+  "position": {
+    "x": 744,
+    "y": 456
+  },
+  "dialogue": {
+    "entries": {
+      "default": "Sahil yolu sessiz gorunuyor ama herkes birbirini tanir. Yeniysen once insanlarla tanis.",
+      "offer_meet_mert": "Mert de biraz ileride. Onunla konusup tekrar bana donmene gerek yok, tanisman yeterli. Sana 18 coin verecegim.",
+      "in_progress_meet_mert": "Mert iskele tarafinda dolasir. Onunla bir kez konusman yeterli.",
+      "completed_meet_mert": "Sahilde ilk baglantini kurdun. Artik buradaki gorev zincirlerine daha kolay girersin."
+    }
+  },
+  "quests": [
+    {
+      "id": "meet-mert",
+      "title": "Sahilde Tanis",
+      "description": "Lina'nin yonlendirdigi Mert ile sahilde konus.",
+      "prerequisites": [
+        "visit-fountain"
+      ],
+      "objectives": [
+        {
+          "type": "talk-to-npc",
+          "targetLabel": "Mert ile Konus",
+          "npcId": "mert"
+        }
+      ],
+      "rewards": {
+        "coins": 18,
+        "xp": 45,
+        "items": []
+      },
+      "dialogueLinks": {
+        "default": "default",
+        "offer": "offer_meet_mert",
+        "inProgress": "in_progress_meet_mert",
+        "completed": "completed_meet_mert"
+      }
+    }
+  ]
+}

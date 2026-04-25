@@ -1,0 +1,50 @@
+{
+  "id": "core-daily-quests",
+  "quests": [
+    {
+      "id": "daily-pickups-5",
+      "title": "Gunluk Toplayici",
+      "description": "Bugun 5 pickup topla.",
+      "type": "collect-pickups",
+      "targetCount": 5,
+      "rewards": {
+        "coins": 14,
+        "xp": 24
+      }
+    },
+    {
+      "id": "daily-talk-npcs-2",
+      "title": "Sosyal Tur",
+      "description": "2 farkli NPC ile konus.",
+      "type": "talk-to-npcs",
+      "targetCount": 2,
+      "rewards": {
+        "coins": 12,
+        "xp": 22
+      }
+    },
+    {
+      "id": "daily-open-chest-1",
+      "title": "Sandik Molasi",
+      "description": "1 sandik ac.",
+      "type": "open-chests",
+      "targetCount": 1,
+      "rewards": {
+        "coins": 16,
+        "xp": 28
+      }
+    },
+    {
+      "id": "daily-visit-beach",
+      "title": "Sahil Ziyareti",
+      "description": "Sunset Beach odasini ziyaret et.",
+      "type": "visit-room",
+      "targetCount": 1,
+      "targetRoomId": "beach",
+      "rewards": {
+        "coins": 10,
+        "xp": 18
+      }
+    }
+  ]
+}

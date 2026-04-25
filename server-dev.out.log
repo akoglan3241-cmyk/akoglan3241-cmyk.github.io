@@ -1,0 +1,9 @@
+
+> social-rpg-multiplayer@0.1.0 dev:server
+> npm --prefix server run dev
+
+
+> social-rpg-server@0.1.0 dev
+> node src/server.js
+
+Socket server listening on http://localhost:3001

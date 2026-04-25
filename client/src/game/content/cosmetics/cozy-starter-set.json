@@ -1,0 +1,15 @@
+[
+  {
+    "id": "cozy-starter",
+    "title": "Cozy Starter Set",
+    "description": "A simple social-starter outfit set for town and cafe content.",
+    "slots": {
+      "hair": ["short-bob", "soft-wave"],
+      "top": ["striped-sweater", "cafe-apron"],
+      "bottom": ["denim-shorts", "soft-skirt"],
+      "accessory": ["flower", "glasses"]
+    },
+    "shopIds": ["town-boutique"],
+    "tags": ["starter", "cozy"]
+  }
+]

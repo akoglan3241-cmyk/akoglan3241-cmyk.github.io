@@ -1,0 +1,120 @@
+{
+  "id": "selin-dialogue",
+  "npcId": "selin",
+  "speaker": "Selin",
+  "entryPoints": [
+    {
+      "id": "selin-workshop-locked",
+      "nodeId": "workshop-locked",
+      "conditions": {
+        "questStatus": "locked",
+        "questId": "open-workshop-chest"
+      }
+    },
+    {
+      "id": "selin-workshop-offer",
+      "nodeId": "workshop-offer",
+      "conditions": {
+        "questStatus": "available",
+        "questId": "open-workshop-chest"
+      }
+    },
+    {
+      "id": "selin-workshop-progress",
+      "nodeId": "workshop-progress",
+      "conditions": {
+        "questStatus": "active",
+        "questId": "open-workshop-chest"
+      }
+    },
+    {
+      "id": "selin-workshop-complete",
+      "nodeId": "workshop-complete",
+      "conditions": {
+        "questStatus": "completed",
+        "questId": "open-workshop-chest"
+      }
+    },
+    {
+      "id": "selin-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Atolye her zaman acik. Yeni gelenler genelde once isimlerini duyurur, sonra ekip kurmaya baslar.",
+      "choices": [
+        {
+          "id": "selin-default-close",
+          "text": "Anladim",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "workshop-locked",
+      "text": "Toren'in anahtar isini bitirince bana gel. Atolyede o zaman bir seyler acariz.",
+      "choices": [
+        {
+          "id": "selin-locked-close",
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "workshop-offer",
+      "text": "Workshop yanindaki sandigi anahtarla ac. Icindekileri getirirsen sana 40 coin ve bir hediye kutusu verecegim.",
+      "choices": [
+        {
+          "id": "selin-accept-workshop",
+          "text": "Sandigi acacagim",
+          "action": {
+            "type": "start-quest",
+            "questId": "open-workshop-chest"
+          },
+          "nextNodeId": "workshop-accepted"
+        },
+        {
+          "id": "selin-decline-workshop",
+          "text": "Birazdan donecegim",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "workshop-accepted",
+      "text": "Sandik workshop'un yaninda duruyor. Anahtar sende olmali. Isi bitirince odul seni bekleyecek.",
+      "choices": [
+        {
+          "id": "selin-accepted-close",
+          "text": "Hemen gidiyorum",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "workshop-progress",
+      "text": "Sandik workshop'un yaninda duruyor. Anahtar sende olmali.",
+      "choices": [
+        {
+          "id": "selin-progress-close",
+          "text": "Aklimda",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "workshop-complete",
+      "text": "Atolye sandigini acman iyi oldu. Artik gercek bir kasabali gibi davranmaya basladin.",
+      "choices": [
+        {
+          "id": "selin-complete-close",
+          "text": "Tesekkurler",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

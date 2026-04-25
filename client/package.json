@@ -1,0 +1,19 @@
+{
+  "name": "social-rpg-client",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate:content": "node scripts/validate-content.mjs"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.14"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "town-boutique",
+  "npcId": "duru",
+  "roomId": "boutique",
+  "position": {
+    "x": 456,
+    "y": 360
+  },
+  "title": "Town Boutique",
+  "greeting": "Sac, ust, alt ve aksesuar kozmetiklerini burada bulabilirsin.",
+  "items": [
+    { "id": "cos-hair-spiky", "itemId": "spiky", "label": "Dik Sac", "price": 18, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "hair", "category": "cosmetics" },
+    { "id": "cos-hair-bob", "itemId": "bob", "label": "Bob Sac", "price": 20, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "hair", "category": "cosmetics" },
+    { "id": "cos-top-green", "itemId": "green", "label": "Yesil Ust", "price": 16, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "top", "category": "cosmetics" },
+    { "id": "cos-top-red", "itemId": "red", "label": "Kirmizi Ust", "price": 16, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "top", "category": "cosmetics" },
+    { "id": "cos-bottom-brown", "itemId": "brown", "label": "Kahve Alt", "price": 14, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "bottom", "category": "cosmetics" },
+    { "id": "cos-bottom-black", "itemId": "black", "label": "Siyah Alt", "price": 14, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "bottom", "category": "cosmetics" },
+    { "id": "cos-accessory-glasses", "itemId": "glasses", "label": "Gozluk", "price": 22, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "accessory", "category": "cosmetics" },
+    { "id": "cos-accessory-flower", "itemId": "flower", "label": "Cicek", "price": 12, "amount": 1, "kind": "cosmetic", "cosmeticSlot": "accessory", "category": "cosmetics" }
+  ]
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "new-seasonal-look",
+    "title": "New Seasonal Look",
+    "description": "A grouped cosmetic set for a shop, event, or weekly reward.",
+    "slots": {
+      "hair": ["new-hair-style"],
+      "top": ["new-top-style"],
+      "bottom": ["new-bottom-style"],
+      "accessory": ["new-accessory-style"]
+    },
+    "shopIds": ["town-boutique"],
+    "tags": ["seasonal"]
+  }
+]

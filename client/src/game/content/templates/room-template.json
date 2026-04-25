@@ -1,0 +1,38 @@
+{
+  "harbor": {
+    "id": "harbor",
+    "name": "Cozy Harbor",
+    "width": 24,
+    "height": 18,
+    "spawn": { "x": 12, "y": 14 },
+    "baseTexture": "grass",
+    "paths": [
+      { "x": 3, "y": 12, "width": 18, "height": 2 }
+    ],
+    "decorations": [
+      { "texture": "house", "x": 8, "y": 5, "scale": 1 }
+    ],
+    "labels": [
+      { "x": 12, "y": 4, "text": "Harbor Office" }
+    ],
+    "npcs": [
+      { "id": "yuki", "name": "Yuki", "x": 12, "y": 10, "tint": "0x87c8ff", "dialog": "" }
+    ],
+    "pickups": [
+      { "id": "pickup-shell-east", "itemId": "blueShell", "amount": 1, "label": "Blue Shell", "texture": "pickupGiftBox", "x": 18, "y": 11 }
+    ],
+    "chests": [
+      { "id": "chest-harbor-cache", "x": 17, "y": 10, "costs": [], "lootTableId": "harbor-cache" }
+    ],
+    "portals": [
+      { "id": "portal-harbor-town", "x": 12, "y": 16, "label": "Town", "targetRoomId": "town" }
+    ],
+    "ambiance": {
+      "skyColor": "0x8cd4ff",
+      "glowColor": "0xffd98a",
+      "bandColor": "0x214f2e",
+      "dayNight": { "enabled": true, "cycleDurationMs": 180000 },
+      "weather": { "enabled": true }
+    }
+  }
+}

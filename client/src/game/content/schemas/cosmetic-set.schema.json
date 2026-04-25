@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cosmetic Sets",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "slots"],
+    "properties": {
+      "id": { "type": "string" },
+      "title": { "type": "string" },
+      "description": { "type": "string" },
+      "slots": {
+        "type": "object",
+        "properties": {
+          "hair": { "type": "array", "items": { "type": "string" } },
+          "top": { "type": "array", "items": { "type": "string" } },
+          "bottom": { "type": "array", "items": { "type": "string" } },
+          "accessory": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

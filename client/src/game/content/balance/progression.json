@@ -1,0 +1,37 @@
+{
+  "levelXpThresholds": [0, 70, 170, 320, 540, 830, 1190, 1620, 2120, 2690],
+  "pickupXpRewards": {
+    "pickup-coin-east": 6,
+    "pickup-coin-south": 5,
+    "pickup-key-west": 14,
+    "pickup-gift-north": 12,
+    "pickup-cafe-coin": 4,
+    "pickup-home-gift": 10,
+    "pickup-beach-coin": 6,
+    "pickup-beach-gift": 12
+  },
+  "defaultPickupXpReward": 5,
+  "chestXpRewards": {
+    "chest-workshop": 24,
+    "chest-home": 14,
+    "chest-beach": 18
+  },
+  "defaultChestXpReward": 14,
+  "levelUnlocks": [
+    {
+      "id": "cafe-regular",
+      "level": 2,
+      "label": "Moon Cafe sosyal alanlari"
+    },
+    {
+      "id": "beach-regular",
+      "level": 3,
+      "label": "Sunset Beach etkinlikleri"
+    },
+    {
+      "id": "style-collector",
+      "level": 5,
+      "label": "Kozmetik koleksiyon unvani"
+    }
+  ]
+}

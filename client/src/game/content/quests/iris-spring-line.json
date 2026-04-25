@@ -1,0 +1,50 @@
+{
+  "id": "iris-spring-line",
+  "npcId": "iris",
+  "roomId": "town",
+  "eventTags": ["spring-bloom"],
+  "position": {
+    "x": 552,
+    "y": 504
+  },
+  "dialogue": {
+    "entries": {
+      "default": "Spring Bloom kutlamasi icin herkes meydana renkli paketler birakiyor.",
+      "offer_collect_blooms": "Kutlama standi icin iki hediye kutusu toplar misin? Donunce sana ozel bir bahar odulu verecegim.",
+      "in_progress_collect_blooms": "Hediye kutulari kasaba ve sahilde bulunabiliyor. Iki tane yeterli.",
+      "completed_collect_blooms": "Harika. Stand artik hazir, kasaba daha da sicak gorunuyor."
+    }
+  },
+  "quests": [
+    {
+      "id": "spring-bloom-prep",
+      "title": "Bahar Standi Hazirligi",
+      "description": "Festival standi icin 2 hediye kutusu topla.",
+      "prerequisites": [],
+      "objectives": [
+        {
+          "type": "collect-item",
+          "targetLabel": "Hediye Kutusu",
+          "itemId": "giftBox",
+          "targetAmount": 2
+        }
+      ],
+      "rewards": {
+        "coins": 35,
+        "xp": 55,
+        "items": [
+          {
+            "itemId": "specialGift",
+            "amount": 1
+          }
+        ]
+      },
+      "dialogueLinks": {
+        "default": "default",
+        "offer": "offer_collect_blooms",
+        "inProgress": "in_progress_collect_blooms",
+        "completed": "completed_collect_blooms"
+      }
+    }
+  ]
+}

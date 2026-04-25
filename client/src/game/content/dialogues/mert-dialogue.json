@@ -1,0 +1,62 @@
+{
+  "id": "mert-dialogue",
+  "npcId": "mert",
+  "speaker": "Mert",
+  "entryPoints": [
+    {
+      "id": "mert-lina-active",
+      "nodeId": "lina-active",
+      "conditions": {
+        "activeQuestId": "meet-mert"
+      }
+    },
+    {
+      "id": "mert-lina-completed",
+      "nodeId": "lina-completed",
+      "conditions": {
+        "requiredCompletedQuestIds": [
+          "meet-mert"
+        ]
+      }
+    },
+    {
+      "id": "mert-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Sahilde toplanan seyleri dikkatli kullan. Bazi esyalar gorevlerde ise yarar.",
+      "choices": [
+        {
+          "id": "mert-default-close",
+          "text": "Aklimda",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "lina-active",
+      "text": "Lina seni mi gonderdi? Guzel. Sahilde ne bulursan once ne ise yaradigini anlamaya calis.",
+      "choices": [
+        {
+          "id": "mert-active-close",
+          "text": "Tesekkurler",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "lina-completed",
+      "text": "Artik sahilin yuzlerini taniyorsun. Sonraki islerde daha hizli ilerlersin.",
+      "choices": [
+        {
+          "id": "mert-complete-close",
+          "text": "Gorusuruz",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

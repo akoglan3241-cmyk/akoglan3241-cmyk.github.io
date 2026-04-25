@@ -1,0 +1,117 @@
+{
+  "id": "lina-dialogue",
+  "npcId": "lina",
+  "speaker": "Lina",
+  "entryPoints": [
+    {
+      "id": "lina-first-meet",
+      "nodeId": "first-meet",
+      "repeatable": false
+    },
+    {
+      "id": "lina-meet-mert-offer",
+      "nodeId": "meet-mert-offer",
+      "conditions": {
+        "questStatus": "available",
+        "questId": "meet-mert"
+      }
+    },
+    {
+      "id": "lina-meet-mert-progress",
+      "nodeId": "meet-mert-progress",
+      "conditions": {
+        "questStatus": "active",
+        "questId": "meet-mert"
+      }
+    },
+    {
+      "id": "lina-meet-mert-complete",
+      "nodeId": "meet-mert-complete",
+      "conditions": {
+        "questStatus": "completed",
+        "questId": "meet-mert"
+      }
+    },
+    {
+      "id": "lina-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "first-meet",
+      "text": "Sahile ilk kez geldiysen gunes batmadan once birkac kisiyle tanis. Burada iliskiler hizli kurulur.",
+      "choices": [
+        {
+          "id": "lina-first-close",
+          "text": "Etrafa bakayim",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "default",
+      "text": "Dalgalar sakin. Aksam olunca herkes sahil yolunda toplanir.",
+      "choices": [
+        {
+          "id": "lina-default-close",
+          "text": "Guzel",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "meet-mert-offer",
+      "text": "Mert de biraz ileride. Onunla konusup tekrar bana donmene gerek yok, tanisman yeterli. Sana 18 coin verecegim.",
+      "choices": [
+        {
+          "id": "lina-accept-mert",
+          "text": "Tamam, Mert ile konusacagim",
+          "action": {
+            "type": "start-quest",
+            "questId": "meet-mert"
+          },
+          "nextNodeId": "meet-mert-accepted"
+        },
+        {
+          "id": "lina-decline-mert",
+          "text": "Simdilik sonra",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "meet-mert-accepted",
+      "text": "Iskele tarafinda dolasir. Bir kez konusman yeterli olacak.",
+      "choices": [
+        {
+          "id": "lina-accepted-close",
+          "text": "Gidiyorum",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "meet-mert-progress",
+      "text": "Mert iskele tarafinda dolasir. Onunla bir kez konusman yeterli.",
+      "choices": [
+        {
+          "id": "lina-progress-close",
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "meet-mert-complete",
+      "text": "Sahilde ilk baglantini kurdun. Artik buradaki gorev zincirlerine daha kolay girersin.",
+      "choices": [
+        {
+          "id": "lina-complete-close",
+          "text": "Harika",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

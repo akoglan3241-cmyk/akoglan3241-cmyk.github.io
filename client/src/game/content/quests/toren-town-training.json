@@ -1,0 +1,53 @@
+{
+  "id": "toren-town-training",
+  "npcId": "toren",
+  "roomId": "town",
+  "position": {
+    "x": 696,
+    "y": 408
+  },
+  "dialogue": {
+    "entries": {
+      "default": "Kasabanin kuzeyinde kucuk bir egitim alani var. Sosyal gorevler icin once insanlarla konusmayi unutma.",
+      "locked_find_old_key": "Once Mira'nin meydan gorevini bitir. Sonra seni daha zor bir ise yollayacagim.",
+      "offer_find_old_key": "Bati yolunda dusurulmus eski bir anahtar var. Onu bulup getirirsen 15 coin kazanacaksin.",
+      "in_progress_find_old_key": "Eski anahtar bati yolunda kalmis olmali. Yol kenarlarini dikkatle ara.",
+      "completed_find_old_key": "Eski anahtari bulduysan atolye kapilari senin icin daha degerli hale gelir."
+    }
+  },
+  "quests": [
+    {
+      "id": "find-old-key",
+      "title": "Kayip Anahtari Bul",
+      "description": "Bati yolundaki eski anahtari bul ve yanina al.",
+      "prerequisites": [
+        "visit-fountain"
+      ],
+      "objectives": [
+        {
+          "type": "collect-item",
+          "targetLabel": "Eski Anahtar",
+          "itemId": "key",
+          "targetAmount": 1
+        }
+      ],
+      "rewards": {
+        "coins": 20,
+        "xp": 65,
+        "items": [
+          {
+            "itemId": "coffee",
+            "amount": 1
+          }
+        ]
+      },
+      "dialogueLinks": {
+        "default": "default",
+        "locked": "locked_find_old_key",
+        "offer": "offer_find_old_key",
+        "inProgress": "in_progress_find_old_key",
+        "completed": "completed_find_old_key"
+      }
+    }
+  ]
+}

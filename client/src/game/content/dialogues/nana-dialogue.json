@@ -1,0 +1,40 @@
+{
+  "id": "nana-dialogue",
+  "npcId": "nana",
+  "speaker": "Nana",
+  "entryPoints": [
+    {
+      "id": "nana-first-meet",
+      "nodeId": "first-meet",
+      "repeatable": false
+    },
+    {
+      "id": "nana-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "first-meet",
+      "text": "Ev sakin ama guvenlidir. Disari cikmadan once malzemelerini kontrol et. Bir kez duzen kurarsan geri donmek kolay olur.",
+      "choices": [
+        {
+          "id": "nana-first-close",
+          "text": "Tesekkurler Nana",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "default",
+      "text": "Ev sakin ama guvenlidir. Disari cikmadan once malzemelerini kontrol et.",
+      "choices": [
+        {
+          "id": "nana-default-close",
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

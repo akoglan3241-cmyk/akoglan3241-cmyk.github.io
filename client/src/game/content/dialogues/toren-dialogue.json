@@ -1,0 +1,120 @@
+{
+  "id": "toren-dialogue",
+  "npcId": "toren",
+  "speaker": "Toren",
+  "entryPoints": [
+    {
+      "id": "toren-find-key-locked",
+      "nodeId": "find-key-locked",
+      "conditions": {
+        "questStatus": "locked",
+        "questId": "find-old-key"
+      }
+    },
+    {
+      "id": "toren-find-key-offer",
+      "nodeId": "find-key-offer",
+      "conditions": {
+        "questStatus": "available",
+        "questId": "find-old-key"
+      }
+    },
+    {
+      "id": "toren-find-key-progress",
+      "nodeId": "find-key-progress",
+      "conditions": {
+        "questStatus": "active",
+        "questId": "find-old-key"
+      }
+    },
+    {
+      "id": "toren-find-key-complete",
+      "nodeId": "find-key-complete",
+      "conditions": {
+        "questStatus": "completed",
+        "questId": "find-old-key"
+      }
+    },
+    {
+      "id": "toren-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Kasabanin kuzeyinde kucuk bir egitim alani var. Sosyal gorevler icin once insanlarla konusmayi unutma.",
+      "choices": [
+        {
+          "id": "toren-default-close",
+          "text": "Aklimda",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "find-key-locked",
+      "text": "Once Mira'nin meydan gorevini bitir. Sonra seni daha zor bir ise yollayacagim.",
+      "choices": [
+        {
+          "id": "toren-locked-close",
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "find-key-offer",
+      "text": "Bati yolunda dusurulmus eski bir anahtar var. Onu bulup getirirsen 15 coin kazanacaksin.",
+      "choices": [
+        {
+          "id": "toren-accept-key",
+          "text": "Anahtari arayacagim",
+          "action": {
+            "type": "start-quest",
+            "questId": "find-old-key"
+          },
+          "nextNodeId": "find-key-accepted"
+        },
+        {
+          "id": "toren-decline-key",
+          "text": "Simdilik beklesin",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "find-key-accepted",
+      "text": "Yol kenarlarini dikkatle ara. Anahtar kucuk ama gorev zinciri icin onemli.",
+      "choices": [
+        {
+          "id": "toren-accepted-close",
+          "text": "Basliyorum",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "find-key-progress",
+      "text": "Eski anahtar bati yolunda kalmis olmali. Yol kenarlarini dikkatle ara.",
+      "choices": [
+        {
+          "id": "toren-progress-close",
+          "text": "Tamam",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "find-key-complete",
+      "text": "Eski anahtari bulduysan atolye kapilari senin icin daha degerli hale gelir.",
+      "choices": [
+        {
+          "id": "toren-complete-close",
+          "text": "Selin ile konusayim",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

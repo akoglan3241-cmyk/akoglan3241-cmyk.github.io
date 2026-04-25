@@ -1,0 +1,330 @@
+{
+  "town": {
+    "id": "town",
+    "name": "Sahil Caddesi",
+    "width": 32,
+    "height": 24,
+    "spawn": { "x": 15, "y": 18 },
+    "baseTexture": "sidewalk",
+    "paths": [
+      { "x": 0, "y": 14, "width": 32, "height": 4 },
+      { "x": 14, "y": 3, "width": 4, "height": 18 },
+      { "x": 3, "y": 7, "width": 11, "height": 3 },
+      { "x": 18, "y": 7, "width": 11, "height": 3 },
+      { "x": 0, "y": 18, "width": 32, "height": 2 }
+    ],
+    "crosswalks": [
+      { "x": 14, "y": 12, "width": 4, "height": 3, "orientation": "vertical" },
+      { "x": 12, "y": 18, "width": 8, "height": 2, "orientation": "horizontal" }
+    ],
+    "waterfront": { "enabled": true, "waterStartY": 20, "boardwalkStartY": 18 },
+    "decorations": [
+      { "texture": "storefrontRed", "x": 5, "y": 4, "scale": 1, "collider": { "width": 76, "height": 36, "offsetY": 18 } },
+      { "texture": "storefrontBlue", "x": 10, "y": 4, "scale": 1, "collider": { "width": 76, "height": 36, "offsetY": 18 } },
+      { "texture": "storefrontCafe", "x": 22, "y": 4, "scale": 1.02, "collider": { "width": 78, "height": 36, "offsetY": 18 } },
+      { "texture": "storefrontBrown", "x": 27, "y": 4, "scale": 1.02, "collider": { "width": 78, "height": 36, "offsetY": 18 } },
+      { "texture": "streetLamp", "x": 3, "y": 12, "scale": 1 },
+      { "texture": "streetLamp", "x": 29, "y": 12, "scale": 1 },
+      { "texture": "streetLamp", "x": 8, "y": 19, "scale": 1 },
+      { "texture": "streetLamp", "x": 24, "y": 19, "scale": 1 },
+      { "texture": "bench", "x": 7, "y": 12, "scale": 1 },
+      { "texture": "bench", "x": 25, "y": 12, "scale": 1 },
+      { "texture": "signpost", "x": 18, "y": 16, "scale": 1 },
+      { "texture": "palmTree", "x": 4, "y": 19, "scale": 0.9, "collider": { "width": 24, "height": 20, "offsetY": 14 } },
+      { "texture": "palmTree", "x": 29, "y": 19, "scale": 0.9, "collider": { "width": 24, "height": 20, "offsetY": 14 } },
+      { "texture": "beachUmbrella", "x": 9, "y": 21, "scale": 1 },
+      { "texture": "beachUmbrella", "x": 22, "y": 21, "scale": 1, "tint": "0x5fb8ff" },
+      { "texture": "smallBoat", "x": 27, "y": 22, "scale": 1 },
+      { "texture": "tree", "x": 2, "y": 3, "scale": 0.96, "collider": { "width": 24, "height": 22, "offsetY": 14 } },
+      { "texture": "tree", "x": 30, "y": 3, "scale": 0.96, "collider": { "width": 24, "height": 22, "offsetY": 14 } },
+      { "texture": "tree", "x": 12, "y": 12, "scale": 0.98, "eventTags": ["spring-bloom"] },
+      { "texture": "tree", "x": 20, "y": 12, "scale": 0.98, "eventTags": ["spring-bloom"] }
+    ],
+    "labels": [
+      { "x": 16, "y": 12, "text": "Spring Bloom Street Fair", "eventTags": ["spring-bloom"] },
+      { "x": 5, "y": 2, "text": "Sehir Butik" },
+      { "x": 10, "y": 2, "text": "Oyun Salonu" },
+      { "x": 22, "y": 2, "text": "Pop Cafe" },
+      { "x": 27, "y": 2, "text": "Mobilya Evi" },
+      { "x": 16, "y": 13, "text": "Sahil Bulvari" },
+      { "x": 18, "y": 17, "text": "Iskele Yolu" }
+    ],
+    "npcs": [
+      { "id": "mira", "name": "Mira", "x": 16, "y": 17, "tint": "0xf4a261", "dialog": "" },
+      { "id": "toren", "name": "Toren", "x": 14, "y": 9, "tint": "0x7bd389", "dialog": "" },
+      { "id": "selin", "name": "Selin", "x": 26, "y": 17, "tint": "0x9d8df1", "dialog": "" },
+      { "id": "iris", "name": "Iris", "x": 18, "y": 13, "tint": "0xff8fcf", "dialog": "Ilkbahar cicekleri bu yil tum caddeyi doldurdu.", "eventTags": ["spring-bloom"] }
+    ],
+    "pickups": [
+      { "id": "pickup-coin-east", "itemId": "coin", "amount": 8, "label": "Coin Kesesi", "texture": "pickupCoin", "x": 20, "y": 17 },
+      { "id": "pickup-coin-south", "itemId": "coin", "amount": 5, "label": "Coin", "texture": "pickupCoin", "x": 9, "y": 19 },
+      { "id": "pickup-key-west", "itemId": "key", "amount": 1, "label": "Eski Anahtar", "texture": "pickupKey", "x": 5, "y": 17 },
+      { "id": "pickup-gift-north", "itemId": "giftBox", "amount": 1, "label": "Vitrin Paketi", "texture": "pickupGiftBox", "x": 23, "y": 8 }
+    ],
+    "chests": [{ "id": "chest-workshop", "x": 28, "y": 19, "costs": [{ "itemId": "key", "amount": 1 }], "lootTableId": "workshop-supplies" }],
+    "portals": [
+      { "id": "portal-town-boutique", "x": 5, "y": 9, "label": "Butik", "targetRoomId": "boutique" },
+      { "id": "portal-town-arcade", "x": 10, "y": 9, "label": "Games", "targetRoomId": "arcade" },
+      { "id": "portal-town-cafe", "x": 22, "y": 9, "label": "Cafe", "targetRoomId": "cafe" },
+      { "id": "portal-town-furniture", "x": 27, "y": 9, "label": "Mobilya", "targetRoomId": "furniture-store" },
+      { "id": "portal-town-beach", "x": 28, "y": 19, "label": "Beach", "targetRoomId": "beach" },
+      { "id": "portal-town-home", "x": 25, "y": 19, "label": "Home", "targetRoomId": "home" }
+    ],
+    "ambiance": {
+      "skyColor": "0x8cd4ff",
+      "glowColor": "0xffd98a",
+      "bandColor": "0x214f2e",
+      "dayNight": { "enabled": true, "cycleDurationMs": 180000 },
+      "weather": { "enabled": true }
+    }
+  },
+  "cafe": {
+    "id": "cafe",
+    "name": "Moon Cafe",
+    "width": 20,
+    "height": 14,
+    "spawn": { "x": 10, "y": 10 },
+    "baseTexture": "sidewalk",
+    "paths": [
+      { "x": 6, "y": 7, "width": 8, "height": 2 },
+      { "x": 8, "y": 9, "width": 4, "height": 3 }
+    ],
+    "decorations": [
+      { "texture": "cafeCounter", "x": 10, "y": 3, "scale": 1, "collider": { "width": 96, "height": 26, "offsetY": 18 } },
+      { "texture": "displayShelf", "x": 5, "y": 3, "scale": 0.95, "collider": { "width": 58, "height": 18, "offsetY": 16 } },
+      { "texture": "displayShelf", "x": 15, "y": 3, "scale": 0.95, "collider": { "width": 58, "height": 18, "offsetY": 16 } },
+      { "texture": "welcomeMat", "x": 10, "y": 11, "scale": 0.95 },
+      { "texture": "furnitureTable", "x": 6, "y": 8, "scale": 0.66 },
+      { "texture": "furnitureTable", "x": 14, "y": 8, "scale": 0.66 },
+      { "texture": "furnitureChair", "x": 5, "y": 9, "scale": 0.94 },
+      { "texture": "furnitureChair", "x": 7, "y": 9, "scale": 0.94 },
+      { "texture": "furnitureChair", "x": 13, "y": 9, "scale": 0.94 },
+      { "texture": "furnitureChair", "x": 15, "y": 9, "scale": 0.94 },
+      { "texture": "furniturePlant", "x": 2, "y": 10, "scale": 0.96 },
+      { "texture": "furniturePlant", "x": 18, "y": 10, "scale": 0.96 },
+      { "texture": "furniturePoster", "x": 3, "y": 4, "scale": 0.94 },
+      { "texture": "furniturePoster", "x": 17, "y": 4, "scale": 0.94 }
+    ],
+    "labels": [{ "x": 10, "y": 2, "text": "Coffee Bar" }],
+    "npcs": [
+      { "id": "baris", "name": "Baris", "x": 10, "y": 8, "tint": "0xe9a178", "dialog": "Bugun kasabada epey hareket var. Bir kahve molasi herkesin isine yarar.", "shopId": "moon-cafe-counter" }
+    ],
+    "pickups": [
+      { "id": "pickup-cafe-coin", "itemId": "coin", "amount": 4, "label": "Bahsis", "texture": "pickupCoin", "x": 13, "y": 9 }
+    ],
+    "chests": [],
+    "portals": [
+      { "id": "portal-cafe-town", "x": 10, "y": 12, "label": "Town", "targetRoomId": "town" },
+      { "id": "portal-cafe-beach", "x": 3, "y": 10, "label": "Beach", "targetRoomId": "beach" },
+      { "id": "portal-cafe-home", "x": 17, "y": 10, "label": "Home", "targetRoomId": "home" }
+    ],
+    "ambiance": {
+      "skyColor": "0xc89e72",
+      "glowColor": "0xffe3a8",
+      "bandColor": "0x4c2f20",
+      "dayNight": { "enabled": false },
+      "weather": { "enabled": false }
+    }
+  },
+  "boutique": {
+    "id": "boutique",
+    "name": "Sehir Butik",
+    "width": 18,
+    "height": 12,
+    "spawn": { "x": 9, "y": 9 },
+    "baseTexture": "sidewalk",
+    "paths": [
+      { "x": 2, "y": 8, "width": 14, "height": 2 }
+    ],
+    "decorations": [
+      { "texture": "displayShelf", "x": 4, "y": 3, "scale": 0.98, "collider": { "width": 60, "height": 16, "offsetY": 14 } },
+      { "texture": "displayShelf", "x": 14, "y": 3, "scale": 0.98, "collider": { "width": 60, "height": 16, "offsetY": 14 } },
+      { "texture": "clothingRack", "x": 6, "y": 6, "scale": 1, "collider": { "width": 42, "height": 18, "offsetY": 14 } },
+      { "texture": "clothingRack", "x": 12, "y": 6, "scale": 1, "collider": { "width": 42, "height": 18, "offsetY": 14 } },
+      { "texture": "welcomeMat", "x": 9, "y": 10, "scale": 0.9 },
+      { "texture": "bench", "x": 3, "y": 8, "scale": 0.9 },
+      { "texture": "bench", "x": 15, "y": 8, "scale": 0.9 },
+      { "texture": "furniturePlant", "x": 2, "y": 10, "scale": 0.9 },
+      { "texture": "furniturePlant", "x": 16, "y": 10, "scale": 0.9 },
+      { "texture": "furniturePoster", "x": 9, "y": 3, "scale": 0.95 }
+    ],
+    "labels": [
+      { "x": 9, "y": 2, "text": "Sehir Butik" }
+    ],
+    "npcs": [
+      { "id": "duru", "name": "Duru", "x": 9, "y": 7, "tint": "0xf0a6ca", "dialog": "Tarzini degistirmek istersen yeni kozmetiklere goz atabilirsin.", "shopId": "town-boutique" }
+    ],
+    "pickups": [],
+    "chests": [],
+    "portals": [
+      { "id": "portal-boutique-town", "x": 9, "y": 10, "label": "Town", "targetRoomId": "town" },
+      { "id": "portal-boutique-cafe", "x": 15, "y": 8, "label": "Cafe", "targetRoomId": "cafe" }
+    ],
+    "ambiance": {
+      "skyColor": "0xd7b8a0",
+      "glowColor": "0xffe3b2",
+      "bandColor": "0x6a2330",
+      "dayNight": { "enabled": false },
+      "weather": { "enabled": false }
+    }
+  },
+  "furniture-store": {
+    "id": "furniture-store",
+    "name": "Mobilya Evi",
+    "width": 18,
+    "height": 12,
+    "spawn": { "x": 9, "y": 9 },
+    "baseTexture": "sidewalk",
+    "paths": [
+      { "x": 2, "y": 8, "width": 14, "height": 2 }
+    ],
+    "decorations": [
+      { "texture": "displayShelf", "x": 4, "y": 3, "scale": 1, "collider": { "width": 60, "height": 16, "offsetY": 14 } },
+      { "texture": "displayShelf", "x": 14, "y": 3, "scale": 1, "collider": { "width": 60, "height": 16, "offsetY": 14 } },
+      { "texture": "welcomeMat", "x": 9, "y": 10, "scale": 0.9 },
+      { "texture": "furnitureChair", "x": 4, "y": 7, "scale": 1 },
+      { "texture": "furnitureChair", "x": 6, "y": 8, "scale": 1 },
+      { "texture": "furnitureTable", "x": 9, "y": 7, "scale": 0.78 },
+      { "texture": "furnitureLamp", "x": 12, "y": 7, "scale": 1 },
+      { "texture": "furniturePlant", "x": 15, "y": 7, "scale": 1 },
+      { "texture": "furniturePoster", "x": 3, "y": 8, "scale": 1 },
+      { "texture": "furniturePoster", "x": 15, "y": 8, "scale": 1 },
+      { "texture": "furnitureChair", "x": 13, "y": 9, "scale": 0.96 },
+      { "texture": "furnitureTable", "x": 5, "y": 9, "scale": 0.7 }
+    ],
+    "labels": [
+      { "x": 9, "y": 2, "text": "Mobilya Evi" }
+    ],
+    "npcs": [
+      { "id": "ferit", "name": "Ferit", "x": 9, "y": 7, "tint": "0xe3b36a", "dialog": "Evin bos gorunuyorsa biraz mobilya iyi gelir.", "shopId": "town-furniture-house" }
+    ],
+    "pickups": [],
+    "chests": [],
+    "portals": [
+      { "id": "portal-furniture-town", "x": 9, "y": 10, "label": "Town", "targetRoomId": "town" },
+      { "id": "portal-furniture-home", "x": 15, "y": 8, "label": "Home", "targetRoomId": "home" }
+    ],
+    "ambiance": {
+      "skyColor": "0xb79f84",
+      "glowColor": "0xffe2ae",
+      "bandColor": "0x5f3b22",
+      "dayNight": { "enabled": false },
+      "weather": { "enabled": false }
+    }
+  },
+  "home": {
+    "id": "home",
+    "name": "Quiet Home",
+    "width": 18,
+    "height": 12,
+    "spawn": { "x": 9, "y": 9 },
+    "baseTexture": "road",
+    "paths": [],
+    "decorations": [
+      { "texture": "house", "x": 9, "y": 3, "scale": 1, "collider": { "width": 74, "height": 34, "offsetY": 18 } },
+      { "texture": "tree", "x": 3, "y": 9, "scale": 0.9, "collider": { "width": 24, "height": 20, "offsetY": 12 } },
+      { "texture": "tree", "x": 15, "y": 9, "scale": 0.9, "collider": { "width": 24, "height": 20, "offsetY": 12 } }
+    ],
+    "labels": [{ "x": 9, "y": 2, "text": "Living Room" }],
+    "npcs": [
+      { "id": "nana", "name": "Nana", "x": 9, "y": 8, "tint": "0xf0c48f", "dialog": "Ev sakin ama guvenlidir. Disari cikmadan once malzemelerini kontrol et." }
+    ],
+    "pickups": [
+      { "id": "pickup-home-gift", "itemId": "giftBox", "amount": 1, "label": "Sarmalanmis Paket", "texture": "pickupGiftBox", "x": 12, "y": 8 }
+    ],
+    "chests": [{ "id": "chest-home", "x": 6, "y": 8, "costs": [], "lootTableId": "home-stash" }],
+    "portals": [
+      { "id": "portal-home-town", "x": 9, "y": 10, "label": "Town", "targetRoomId": "town" },
+      { "id": "portal-home-beach", "x": 3, "y": 8, "label": "Beach", "targetRoomId": "beach" },
+      { "id": "portal-home-cafe", "x": 15, "y": 8, "label": "Cafe", "targetRoomId": "cafe" }
+    ],
+    "ambiance": {
+      "skyColor": "0xb9c7dd",
+      "glowColor": "0xffefc2",
+      "bandColor": "0x38455a",
+      "dayNight": { "enabled": false },
+      "weather": { "enabled": false }
+    }
+  },
+  "beach": {
+    "id": "beach",
+    "name": "Sunset Beach",
+    "width": 26,
+    "height": 16,
+    "spawn": { "x": 13, "y": 12 },
+    "baseTexture": "grass",
+    "paths": [
+      { "x": 0, "y": 10, "width": 26, "height": 6 },
+      { "x": 7, "y": 8, "width": 12, "height": 2 }
+    ],
+    "decorations": [
+      { "texture": "tree", "x": 3, "y": 11, "scale": 1.08, "collider": { "width": 26, "height": 24, "offsetY": 12 } },
+      { "texture": "tree", "x": 6, "y": 12, "scale": 1.05, "collider": { "width": 26, "height": 24, "offsetY": 12 } },
+      { "texture": "tree", "x": 21, "y": 12, "scale": 1.08, "collider": { "width": 26, "height": 24, "offsetY": 12 } },
+      { "texture": "tree", "x": 24, "y": 11, "scale": 1.05, "collider": { "width": 26, "height": 24, "offsetY": 12 } },
+      { "texture": "house", "x": 13, "y": 4, "scale": 0.94, "collider": { "width": 72, "height": 34, "offsetY": 18 } }
+    ],
+    "labels": [
+      { "x": 13, "y": 2, "text": "Beach Hut" },
+      { "x": 13, "y": 9, "text": "Boardwalk" }
+    ],
+    "npcs": [
+      { "id": "lina", "name": "Lina", "x": 15, "y": 9, "tint": "0x6ec1ff", "dialog": "Dalgalar sakin. Aksam olunca herkes sahil yolunda toplanir." },
+      { "id": "mert", "name": "Mert", "x": 10, "y": 11, "tint": "0xf0c48f", "dialog": "Sahilde toplanan seyleri dikkatli kullan. Bazi esyalar gorevlerde ise yarar." }
+    ],
+    "pickups": [
+      { "id": "pickup-beach-coin", "itemId": "coin", "amount": 6, "label": "Sahil Coini", "texture": "pickupCoin", "x": 8, "y": 11 },
+      { "id": "pickup-beach-gift", "itemId": "giftBox", "amount": 1, "label": "Deniz Paketi", "texture": "pickupGiftBox", "x": 18, "y": 11 }
+    ],
+    "chests": [{ "id": "chest-beach", "x": 20, "y": 9, "costs": [], "lootTableId": "beach-cache" }],
+    "portals": [
+      { "id": "portal-beach-town", "x": 13, "y": 14, "label": "Town", "targetRoomId": "town" },
+      { "id": "portal-beach-cafe", "x": 5, "y": 9, "label": "Cafe", "targetRoomId": "cafe" },
+      { "id": "portal-beach-home", "x": 22, "y": 9, "label": "Home", "targetRoomId": "home" }
+    ],
+    "ambiance": {
+      "skyColor": "0x7fd7ff",
+      "glowColor": "0xffd7a8",
+      "bandColor": "0x1d6a82",
+      "dayNight": { "enabled": true, "cycleDurationMs": 150000 },
+      "weather": { "enabled": true }
+    }
+  },
+  "arcade": {
+    "id": "arcade",
+    "name": "Mini-Game Hub",
+    "width": 20,
+    "height": 14,
+    "spawn": { "x": 10, "y": 10 },
+    "baseTexture": "road",
+    "paths": [
+      { "x": 2, "y": 3, "width": 16, "height": 2 },
+      { "x": 9, "y": 3, "width": 2, "height": 9 }
+    ],
+    "decorations": [
+      { "texture": "house", "x": 5, "y": 3, "scale": 0.94, "collider": { "width": 70, "height": 34, "offsetY": 18 } },
+      { "texture": "house", "x": 15, "y": 3, "scale": 0.94, "collider": { "width": 70, "height": 34, "offsetY": 18 } },
+      { "texture": "tree", "x": 2, "y": 11, "scale": 0.92, "collider": { "width": 24, "height": 20, "offsetY": 12 } },
+      { "texture": "tree", "x": 18, "y": 11, "scale": 0.92, "collider": { "width": 24, "height": 20, "offsetY": 12 } }
+    ],
+    "labels": [
+      { "x": 5, "y": 2, "text": "Reflex Ring" },
+      { "x": 15, "y": 2, "text": "Pocket Cleanup" },
+      { "x": 10, "y": 8, "text": "Play Corner" }
+    ],
+    "npcs": [
+      { "id": "nova", "name": "Nova", "x": 5, "y": 8, "tint": "0x72c8ff", "dialog": "Zamanlamani test etmek ister misin?" },
+      { "id": "pico", "name": "Pico", "x": 15, "y": 8, "tint": "0x8fe3a8", "dialog": "Kisa bir toplama turu hep iyi gelir." }
+    ],
+    "pickups": [],
+    "chests": [],
+    "portals": [{ "id": "portal-arcade-town", "x": 10, "y": 12, "label": "Town", "targetRoomId": "town" }],
+    "ambiance": {
+      "skyColor": "0x9dc9ef",
+      "glowColor": "0xffd99d",
+      "bandColor": "0x203d54",
+      "dayNight": { "enabled": false },
+      "weather": { "enabled": false }
+    }
+  }
+}

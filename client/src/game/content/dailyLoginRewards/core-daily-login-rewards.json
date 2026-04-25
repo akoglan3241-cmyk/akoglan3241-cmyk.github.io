@@ -1,0 +1,53 @@
+{
+  "cycle": true,
+  "rewards": [
+    {
+      "day": 1,
+      "coins": 20,
+      "xp": 15,
+      "items": []
+    },
+    {
+      "day": 2,
+      "coins": 28,
+      "xp": 20,
+      "items": []
+    },
+    {
+      "day": 3,
+      "coins": 36,
+      "xp": 28,
+      "items": [
+        { "itemId": "giftBox", "amount": 1 }
+      ]
+    },
+    {
+      "day": 4,
+      "coins": 46,
+      "xp": 34,
+      "items": []
+    },
+    {
+      "day": 5,
+      "coins": 58,
+      "xp": 42,
+      "items": [
+        { "itemId": "key", "amount": 1 }
+      ]
+    },
+    {
+      "day": 6,
+      "coins": 72,
+      "xp": 54,
+      "items": []
+    },
+    {
+      "day": 7,
+      "coins": 96,
+      "xp": 72,
+      "items": [
+        { "itemId": "specialGift", "amount": 1 }
+      ]
+    }
+  ]
+}

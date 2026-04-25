@@ -1,0 +1,18 @@
+[
+  {
+    "id": "new-room-world-event",
+    "type": "bonus-chest",
+    "roomId": "town",
+    "title": "New Event Title",
+    "announcement": "A new event has started in town.",
+    "durationMs": 60000,
+    "weight": 3,
+    "chest": {
+      "label": "Event Chest",
+      "tileX": 10,
+      "tileY": 10,
+      "costs": [],
+      "lootTableId": "event-supply-drop"
+    }
+  }
+]

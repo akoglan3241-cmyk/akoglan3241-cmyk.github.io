@@ -1,0 +1,21 @@
+[
+  {
+    "id": "npc-new-guide",
+    "name": "New Guide",
+    "role": "quest-giver",
+    "dialogueId": "new-guide-dialogue",
+    "questLineIds": ["new-guide-quest-line"],
+    "shops": [],
+    "appearance": {
+      "tint": "0xffc875"
+    },
+    "rooms": [
+      {
+        "roomId": "town",
+        "x": 10,
+        "y": 10
+      }
+    ],
+    "tags": ["starter"]
+  }
+]
