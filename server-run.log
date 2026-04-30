@@ -1,9 +1,0 @@
-
-> social-rpg-multiplayer@0.1.0 dev:server
-> npm --prefix server run dev
-
-
-> social-rpg-server@0.1.0 dev
-> node src/server.ts
-
-{"level":"info","message":"server_listening","timestamp":"2026-04-09T23:40:28.456Z","port":3001,"mode":"development","persistence":"memory-fallback"}
