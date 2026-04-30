@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NPC Collection",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "rooms"],
+    "properties": {
+      "id": { "type": "string" },
+      "name": { "type": "string" },
+      "role": { "type": "string", "enum": ["quest-giver", "shopkeeper", "social", "minigame-host", "seasonal"] },
+      "dialogueId": { "type": "string" },
+      "questLineIds": { "type": "array", "items": { "type": "string" } },
+      "shops": { "type": "array", "items": { "type": "string" } },
+      "rooms": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["roomId", "x", "y"],
+          "properties": {
+            "roomId": { "type": "string" },
+            "x": { "type": "number" },
+            "y": { "type": "number" }
+          }
+        }
+      }
+    }
+  }
+}

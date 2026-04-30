@@ -1,0 +1,10 @@
+.aider*
+node_modules/
+.env
+*.log
+dist/
+build/node_modules/ 
+.env 
+*.log 
+node_modules/ 
+.env 

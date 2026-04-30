@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dialogue Tree",
+  "type": "object",
+  "required": ["npcId", "speaker", "nodes"],
+  "properties": {
+    "id": { "type": "string" },
+    "npcId": { "type": "string" },
+    "speaker": { "type": "string" },
+    "rootNodeId": { "type": "string" },
+    "eventTags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "entryPoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nodeId"],
+        "properties": {
+          "id": { "type": "string" },
+          "nodeId": { "type": "string" }
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text"],
+        "properties": {
+          "id": { "type": "string" },
+          "text": { "type": "string" },
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "id": { "type": "string" },
+                "text": { "type": "string" },
+                "nextNodeId": { "type": "string" },
+                "close": { "type": "boolean" },
+                "action": {
+                  "type": "object",
+                  "properties": {
+                    "type": { "type": "string", "enum": ["start-quest", "open-shop", "start-minigame"] }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

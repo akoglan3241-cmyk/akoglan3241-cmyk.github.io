@@ -1,0 +1,29 @@
+{
+  "id": "harbor-supplies",
+  "npcId": "yuki",
+  "roomId": "harbor",
+  "position": {
+    "x": 520,
+    "y": 360
+  },
+  "title": "Harbor Supplies",
+  "greeting": "Sefer icin gerekli malzemeleri burada bulabilirsin.",
+  "items": [
+    {
+      "id": "harbor-shell-bag",
+      "itemId": "blueShell",
+      "label": "Blue Shell Bag",
+      "price": 12,
+      "amount": 1,
+      "category": "quest-items"
+    },
+    {
+      "id": "harbor-cozy-lamp",
+      "itemId": "cozyLamp",
+      "label": "Cozy Lamp",
+      "price": 34,
+      "amount": 1,
+      "category": "lamp"
+    }
+  ]
+}

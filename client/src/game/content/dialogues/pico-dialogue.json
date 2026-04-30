@@ -1,0 +1,38 @@
+{
+  "id": "pico-dialogue",
+  "npcId": "pico",
+  "speaker": "Pico",
+  "rootNodeId": "root",
+  "entryPoints": [
+    {
+      "id": "default",
+      "nodeId": "root",
+      "repeatable": true,
+      "conditions": {}
+    }
+  ],
+  "nodes": [
+    {
+      "id": "root",
+      "text": "Pocket Cleanup kisa sureli toplama odasi. Kac obje toplarsan skorun o kadar iyi olur. Hafif coin ve XP odul prototipi var.",
+      "choices": [
+        {
+          "id": "start-collection",
+          "text": "Pocket Cleanup'i baslat",
+          "close": true,
+          "repeatable": true,
+          "action": {
+            "type": "start-minigame",
+            "miniGameId": "collection"
+          }
+        },
+        {
+          "id": "leave",
+          "text": "Daha sonra",
+          "close": true,
+          "repeatable": true
+        }
+      ]
+    }
+  ]
+}

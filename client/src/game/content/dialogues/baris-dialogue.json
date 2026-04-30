@@ -1,0 +1,33 @@
+{
+  "id": "baris-dialogue",
+  "npcId": "baris",
+  "speaker": "Baris",
+  "entryPoints": [
+    {
+      "id": "baris-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Hos geldin. Yeni gelenler genelde once bir kahve alip sonra tekrar meydana doner. Uygun fiyatli basit esyalar burada.",
+      "choices": [
+        {
+          "id": "baris-open-shop",
+          "text": "Bir kahve alayim",
+          "action": {
+            "type": "open-shop",
+            "shopId": "moon-cafe-counter"
+          },
+          "close": true
+        },
+        {
+          "id": "baris-close",
+          "text": "Belki sonra",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

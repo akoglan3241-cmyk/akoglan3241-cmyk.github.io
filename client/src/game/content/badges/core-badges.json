@@ -1,0 +1,55 @@
+{
+  "id": "core-badges",
+  "badges": [
+    {
+      "id": "badge-first-quest",
+      "title": "Quester",
+      "shortLabel": "QUEST",
+      "description": "Ilk gorevini tamamlayanlara verilir.",
+      "category": "achievement",
+      "achievementIds": ["first-quest"],
+      "adminAssignable": false,
+      "seasonal": false
+    },
+    {
+      "id": "badge-collector",
+      "title": "Collector",
+      "shortLabel": "LOOT",
+      "description": "Toplam 10 item toplayanlara verilir.",
+      "category": "achievement",
+      "achievementIds": ["collector-10"],
+      "adminAssignable": false,
+      "seasonal": false
+    },
+    {
+      "id": "badge-chest-runner",
+      "title": "Chest Hunter",
+      "shortLabel": "CHEST",
+      "description": "5 sandik acanlara verilir.",
+      "category": "achievement",
+      "achievementIds": ["chest-runner-5"],
+      "adminAssignable": false,
+      "seasonal": false
+    },
+    {
+      "id": "badge-town-chatter",
+      "title": "Town Chatter",
+      "shortLabel": "CHAT",
+      "description": "Oda sohbetinde 10 mesaj gonderenlere verilir.",
+      "category": "achievement",
+      "achievementIds": ["social-voice-10"],
+      "adminAssignable": false,
+      "seasonal": false
+    },
+    {
+      "id": "badge-spring-festival",
+      "title": "Spring Festival",
+      "shortLabel": "SPRING",
+      "description": "Mevsimsel etkinlikler veya yonetici atamasi icin saklanir.",
+      "category": "seasonal",
+      "achievementIds": [],
+      "adminAssignable": true,
+      "seasonal": true
+    }
+  ]
+}

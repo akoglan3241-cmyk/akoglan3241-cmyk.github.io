@@ -1,0 +1,33 @@
+{
+  "id": "duru-dialogue",
+  "npcId": "duru",
+  "speaker": "Duru",
+  "entryPoints": [
+    {
+      "id": "duru-default",
+      "nodeId": "default"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "default",
+      "text": "Tarzini degistirmek istersen yeni kozmetiklere goz atabilirsin.",
+      "choices": [
+        {
+          "id": "duru-open-shop",
+          "text": "Kozmetikleri goster",
+          "action": {
+            "type": "open-shop",
+            "shopId": "town-boutique"
+          },
+          "close": true
+        },
+        {
+          "id": "duru-close",
+          "text": "Sonra bakarim",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "yuki-harbor-line",
+  "npcId": "yuki",
+  "roomId": "harbor",
+  "position": {
+    "x": 520,
+    "y": 360
+  },
+  "dialogue": {
+    "entries": {
+      "default": "Harbor her sabah yeniden canlanir.",
+      "offer_collect_shell": "Renkli kabuklardan uc tane toplarsan sana yardim ederim.",
+      "completed_collect_shell": "Tam da ihtiyacim olan sey buydu."
+    }
+  },
+  "quests": [
+    {
+      "id": "collect-blue-shells",
+      "title": "Kabuk Topla",
+      "description": "Harbordan 3 mavi kabuk topla.",
+      "prerequisites": [],
+      "objectives": [
+        {
+          "type": "collect-item",
+          "targetLabel": "Blue Shell",
+          "itemId": "blueShell",
+          "targetAmount": 3
+        }
+      ],
+      "rewards": {
+        "coins": 20,
+        "xp": 45,
+        "items": []
+      },
+      "dialogueLinks": {
+        "default": "default",
+        "offer": "offer_collect_shell",
+        "completed": "completed_collect_shell"
+      }
+    }
+  ]
+}

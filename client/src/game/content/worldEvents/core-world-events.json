@@ -1,0 +1,49 @@
+[
+  {
+    "id": "town-supply-drop",
+    "type": "bonus-chest",
+    "roomId": "town",
+    "title": "Lonca Ikmal Sandigi",
+    "announcement": "Meydana bonus bir ikmal sandigi dustu.",
+    "durationMs": 75000,
+    "weight": 4,
+    "chest": {
+      "label": "Bonus Sandik",
+      "tileX": 18,
+      "tileY": 15,
+      "costs": [],
+      "lootTableId": "event-supply-drop"
+    }
+  },
+  {
+    "id": "beach-rare-collectible",
+    "type": "rare-collectible",
+    "roomId": "beach",
+    "title": "Parlayan Deniz Camlari",
+    "announcement": "Sahilde nadir bir collectible ortaya cikti.",
+    "durationMs": 70000,
+    "weight": 5,
+    "pickup": {
+      "itemId": "specialGift",
+      "amount": 1,
+      "label": "Parlayan Deniz Cami",
+      "texture": "pickupGiftBox",
+      "tileX": 16,
+      "tileY": 8
+    }
+  },
+  {
+    "id": "cafe-festival",
+    "type": "npc-festival",
+    "roomId": "cafe",
+    "title": "Kahve Festivali",
+    "announcement": "Moon Cafe'de mini festival basladi.",
+    "durationMs": 90000,
+    "weight": 3,
+    "festival": {
+      "label": "Festival Gunu",
+      "tileX": 10,
+      "tileY": 5
+    }
+  }
+]

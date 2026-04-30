@@ -1,0 +1,37 @@
+[
+  {
+    "id": "wood-chair-basic",
+    "itemId": "woodChair",
+    "title": "Basic Wood Chair",
+    "category": "chair",
+    "width": 1,
+    "height": 1,
+    "interactions": ["sit"],
+    "defaultState": {},
+    "tags": ["starter", "home"]
+  },
+  {
+    "id": "warm-lamp-basic",
+    "itemId": "warmLamp",
+    "title": "Warm Table Lamp",
+    "category": "lamp",
+    "width": 1,
+    "height": 1,
+    "interactions": ["toggle"],
+    "defaultState": {
+      "isOn": false
+    },
+    "tags": ["starter", "home"]
+  },
+  {
+    "id": "fern-pot-basic",
+    "itemId": "fernPot",
+    "title": "Fern Pot",
+    "category": "plant",
+    "width": 1,
+    "height": 1,
+    "interactions": ["inspect"],
+    "defaultState": {},
+    "tags": ["cozy", "decoration"]
+  }
+]

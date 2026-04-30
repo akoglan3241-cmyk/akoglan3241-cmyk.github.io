@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Item Collection",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "label", "category"],
+    "properties": {
+      "id": { "type": "string" },
+      "label": { "type": "string" },
+      "icon": { "type": "string" },
+      "category": {
+        "type": "string",
+        "enum": ["currency", "consumables", "quest-items", "cosmetics", "chair", "table", "lamp", "plant", "decoration", "misc"]
+      },
+      "rarity": { "type": "string", "enum": ["common", "uncommon", "rare", "epic"] },
+      "sellable": { "type": "boolean" },
+      "sellPrice": { "type": "number" },
+      "placeable": { "type": "boolean" },
+      "texture": { "type": "string" },
+      "furniture": {
+        "type": "object",
+        "properties": {
+          "width": { "type": "number" },
+          "height": { "type": "number" }
+        }
+      }
+    }
+  }
+}

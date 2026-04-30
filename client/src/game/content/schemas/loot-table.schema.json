@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Loot Tables",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "rolls", "entries"],
+    "properties": {
+      "id": { "type": "string" },
+      "rolls": { "type": "number", "minimum": 1 },
+      "entries": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "kind", "itemId", "weight", "minAmount", "maxAmount"],
+          "properties": {
+            "id": { "type": "string" },
+            "kind": { "type": "string", "enum": ["inventory", "cosmetic"] },
+            "itemId": { "type": "string" },
+            "cosmeticSlot": { "type": "string" },
+            "weight": { "type": "number", "minimum": 1 },
+            "minAmount": { "type": "number", "minimum": 1 },
+            "maxAmount": { "type": "number", "minimum": 1 }
+          }
+        }
+      }
+    }
+  }
+}

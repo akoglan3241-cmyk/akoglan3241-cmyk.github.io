@@ -1,0 +1,47 @@
+{
+  "id": "mira-town-intro",
+  "npcId": "mira",
+  "roomId": "town",
+  "position": {
+    "x": 408,
+    "y": 600
+  },
+  "dialogue": {
+    "entries": {
+      "default": "Pazar yeni kuruldu. Aksam olmadan lonca meydanina da ugrarsan herkesle tanisirsin.",
+      "offer_visit_fountain": "Kasaba meydanindaki cesmeye git. Orasi herkesin bulusma noktasi. Donunce sana 25 coin verecegim.",
+      "in_progress_visit_fountain": "Cesme hemen meydanin ortasinda. Oraya gidip kasabanin akisini gor.",
+      "completed_visit_fountain": "Meydan yolunu ogrendin. Simdi kasabadaki diger insanlarla daha rahat tanisabilirsin."
+    }
+  },
+  "quests": [
+    {
+      "id": "visit-fountain",
+      "title": "Meydana Ulas",
+      "description": "Kasaba meydanindaki cesmeye git.",
+      "prerequisites": [],
+      "objectives": [
+        {
+          "type": "go-to-location",
+          "targetLabel": "Fountain Square",
+          "roomId": "town",
+          "position": {
+            "x": 600,
+            "y": 600
+          }
+        }
+      ],
+      "rewards": {
+        "coins": 30,
+        "xp": 50,
+        "items": []
+      },
+      "dialogueLinks": {
+        "default": "default",
+        "offer": "offer_visit_fountain",
+        "inProgress": "in_progress_visit_fountain",
+        "completed": "completed_visit_fountain"
+      }
+    }
+  ]
+}

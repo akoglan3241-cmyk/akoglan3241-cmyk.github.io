@@ -1,0 +1,53 @@
+{
+  "id": "town-furniture-house",
+  "npcId": "ferit",
+  "roomId": "furniture-store",
+  "position": {
+    "x": 456,
+    "y": 360
+  },
+  "title": "Furniture House",
+  "greeting": "Evini rahatlatacak temel mobilyalari burada bulabilirsin.",
+  "items": [
+    {
+      "id": "furn-chair-basic",
+      "itemId": "woodChair",
+      "label": "Ahsap Sandalye",
+      "price": 22,
+      "amount": 1,
+      "category": "chair"
+    },
+    {
+      "id": "furn-table-small",
+      "itemId": "smallTable",
+      "label": "Kucuk Masa",
+      "price": 34,
+      "amount": 1,
+      "category": "table"
+    },
+    {
+      "id": "furn-lamp-warm",
+      "itemId": "warmLamp",
+      "label": "Sicak Lamba",
+      "price": 44,
+      "amount": 1,
+      "category": "lamp"
+    },
+    {
+      "id": "furn-plant-potted",
+      "itemId": "pottedPlant",
+      "label": "Saksili Bitki",
+      "price": 28,
+      "amount": 1,
+      "category": "plant"
+    },
+    {
+      "id": "furn-poster-wall",
+      "itemId": "wallPoster",
+      "label": "Duvar Posteri",
+      "price": 32,
+      "amount": 1,
+      "category": "decoration"
+    }
+  ]
+}

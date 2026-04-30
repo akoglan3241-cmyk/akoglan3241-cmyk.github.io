@@ -1,0 +1,59 @@
+[
+  {
+    "id": "mira",
+    "name": "Mira",
+    "role": "quest-giver",
+    "dialogueId": "mira-dialogue",
+    "questLineIds": ["mira-town-intro"],
+    "shops": [],
+    "appearance": {
+      "tint": "0xf4a261"
+    },
+    "rooms": [
+      {
+        "roomId": "town",
+        "x": 8,
+        "y": 12
+      }
+    ],
+    "tags": ["starter", "town"]
+  },
+  {
+    "id": "baris",
+    "name": "Baris",
+    "role": "shopkeeper",
+    "dialogueId": "baris-dialogue",
+    "questLineIds": [],
+    "shops": ["moon-cafe-counter"],
+    "appearance": {
+      "tint": "0xe9a178"
+    },
+    "rooms": [
+      {
+        "roomId": "cafe",
+        "x": 10,
+        "y": 8
+      }
+    ],
+    "tags": ["shop", "cafe"]
+  },
+  {
+    "id": "nova",
+    "name": "Nova",
+    "role": "minigame-host",
+    "dialogueId": "nova-dialogue",
+    "questLineIds": [],
+    "shops": [],
+    "appearance": {
+      "tint": "0x72c8ff"
+    },
+    "rooms": [
+      {
+        "roomId": "arcade",
+        "x": 5,
+        "y": 8
+      }
+    ],
+    "tags": ["arcade", "minigame"]
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "rewardCooldownMs": 3500,
+  "games": {
+    "reaction": {
+      "id": "reaction",
+      "roomId": "arcade",
+      "scoreCap": 100,
+      "rewards": [
+        { "minScore": 85, "coins": 9, "xp": 18, "rankLabel": "Perfect" },
+        { "minScore": 65, "coins": 6, "xp": 12, "rankLabel": "Great" },
+        { "minScore": 40, "coins": 4, "xp": 8, "rankLabel": "Good" },
+        { "minScore": 1, "coins": 2, "xp": 3, "rankLabel": "Try Again" }
+      ]
+    },
+    "collection": {
+      "id": "collection",
+      "roomId": "arcade",
+      "scoreCap": 12,
+      "rewards": [
+        { "minScore": 10, "coins": 10, "xp": 20, "rankLabel": "Clean Sweep" },
+        { "minScore": 7, "coins": 7, "xp": 14, "rankLabel": "Sharp Run" },
+        { "minScore": 4, "coins": 4, "xp": 8, "rankLabel": "Solid Run" },
+        { "minScore": 1, "coins": 2, "xp": 3, "rankLabel": "Warm Up" }
+      ]
+    }
+  }
+}

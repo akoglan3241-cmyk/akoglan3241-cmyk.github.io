@@ -1,0 +1,44 @@
+{
+  "id": "yuki-dialogue",
+  "npcId": "yuki",
+  "speaker": "Yuki",
+  "entryPoints": [
+    {
+      "id": "default-entry",
+      "nodeId": "intro"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "intro",
+      "text": "Harbor sabahlari sessiz olur. Yardim etmek ister misin?",
+      "choices": [
+        {
+          "id": "accept-shell-quest",
+          "text": "Bir gorevin var mi?",
+          "action": {
+            "type": "start-quest",
+            "questId": "collect-blue-shells"
+          },
+          "nextNodeId": "accepted"
+        },
+        {
+          "id": "close-intro",
+          "text": "Simdilik geziyorum",
+          "close": true
+        }
+      ]
+    },
+    {
+      "id": "accepted",
+      "text": "Harika. Iskele boyunca mavi kabuklar bulabilirsin.",
+      "choices": [
+        {
+          "id": "close-accepted",
+          "text": "Yola cikiyorum",
+          "close": true
+        }
+      ]
+    }
+  ]
+}

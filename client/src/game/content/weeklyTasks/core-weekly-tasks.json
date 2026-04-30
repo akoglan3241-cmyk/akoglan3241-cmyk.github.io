@@ -1,0 +1,64 @@
+{
+  "id": "core-weekly-tasks",
+  "tasks": [
+    {
+      "id": "weekly-pickups-15",
+      "title": "Haftalik Toplayici",
+      "description": "Bu hafta 15 pickup topla.",
+      "type": "collect-pickups",
+      "targetCount": 15,
+      "rewards": {
+        "coins": 48,
+        "xp": 90,
+        "cosmetics": []
+      }
+    },
+    {
+      "id": "weekly-social-rounds",
+      "title": "Kasaba Turu",
+      "description": "Bu hafta 6 farkli NPC ile konus.",
+      "type": "talk-to-npcs",
+      "targetCount": 6,
+      "rewards": {
+        "coins": 44,
+        "xp": 82,
+        "cosmetics": []
+      }
+    },
+    {
+      "id": "weekly-chest-run",
+      "title": "Sandik Rotasi",
+      "description": "Bu hafta 3 sandik ac.",
+      "type": "open-chests",
+      "targetCount": 3,
+      "rewards": {
+        "coins": 64,
+        "xp": 120,
+        "cosmetics": [
+          {
+            "slot": "accessory",
+            "cosmeticId": "flower"
+          }
+        ]
+      }
+    },
+    {
+      "id": "weekly-beach-visits",
+      "title": "Sahil Haftasi",
+      "description": "Bu hafta Sunset Beach'i 3 kez ziyaret et.",
+      "type": "visit-room",
+      "targetCount": 3,
+      "targetRoomId": "beach",
+      "rewards": {
+        "coins": 40,
+        "xp": 76,
+        "cosmetics": [
+          {
+            "slot": "hair",
+            "cosmeticId": "bob"
+          }
+        ]
+      }
+    }
+  ]
+}

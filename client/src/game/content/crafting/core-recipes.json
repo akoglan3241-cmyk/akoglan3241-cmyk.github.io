@@ -1,0 +1,38 @@
+[
+  {
+    "id": "special-gift-bundle",
+    "title": "Ozel Hediye Paketi",
+    "description": "Uc hediye kutusunu birlestirip daha degerli bir hediye hazirla.",
+    "coinCost": 8,
+    "requirements": [
+      {
+        "itemId": "giftBox",
+        "amount": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "specialGift",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "golden-key-forge",
+    "title": "Altin Anahtar",
+    "description": "Iki anahtari isleyip daha nadir bir anahtar uret.",
+    "coinCost": 12,
+    "requirements": [
+      {
+        "itemId": "key",
+        "amount": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "goldenKey",
+        "amount": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "social-rpg-core-achievements",
+  "achievements": [
+    {
+      "id": "first-quest",
+      "title": "Ilk Gorev",
+      "description": "Ilk gorevini tamamla.",
+      "category": "quest",
+      "metric": "questsCompleted",
+      "target": 1
+    },
+    {
+      "id": "collector-10",
+      "title": "Toplayici",
+      "description": "Toplam 10 item topla.",
+      "category": "collection",
+      "metric": "itemsCollected",
+      "target": 10
+    },
+    {
+      "id": "chest-runner-5",
+      "title": "Sandik Avcisi",
+      "description": "5 sandik ac.",
+      "category": "exploration",
+      "metric": "chestsOpened",
+      "target": 5
+    },
+    {
+      "id": "social-voice-10",
+      "title": "Sohbet Acildi",
+      "description": "Oda sohbetinde 10 mesaj gonder.",
+      "category": "social",
+      "metric": "chatMessagesSent",
+      "target": 10
+    }
+  ]
+}

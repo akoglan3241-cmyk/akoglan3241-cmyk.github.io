@@ -1,0 +1,18 @@
+{
+  "name": "social-rpg-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/server.ts",
+    "start": "node --experimental-strip-types src/server.ts",
+    "test": "node --test --test-concurrency=1 --test-isolation=none src/**/*.test.ts"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10"
+  }
+}

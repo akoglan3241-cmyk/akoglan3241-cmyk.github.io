@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shop Inventory",
+  "type": "object",
+  "required": ["id", "npcId", "roomId", "items"],
+  "properties": {
+    "id": { "type": "string" },
+    "npcId": { "type": "string" },
+    "roomId": { "type": "string" },
+    "title": { "type": "string" },
+    "greeting": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "itemId", "price", "amount"],
+        "properties": {
+          "id": { "type": "string" },
+          "itemId": { "type": "string" },
+          "label": { "type": "string" },
+          "price": { "type": "number" },
+          "amount": { "type": "number" },
+          "category": {
+            "type": "string",
+            "enum": ["consumables", "quest-items", "cosmetics", "chair", "table", "lamp", "plant", "decoration"]
+          },
+          "kind": { "type": "string", "enum": ["inventory", "cosmetic"] },
+          "cosmeticSlot": { "type": "string", "enum": ["hair", "top", "bottom", "accessory"] }
+        }
+      }
+    }
+  }
+}

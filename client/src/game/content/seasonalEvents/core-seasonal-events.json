@@ -1,0 +1,11 @@
+[
+  {
+    "id": "spring-bloom",
+    "title": "Spring Bloom Festival",
+    "bannerLabel": "Spring Bloom aktif",
+    "announcement": "Kasaba meydani ilkbahar cicekleriyle canlandi.",
+    "startMonthDay": "03-01",
+    "endMonthDay": "05-31",
+    "roomIds": ["town", "beach"]
+  }
+]

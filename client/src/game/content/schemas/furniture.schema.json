@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Furniture Collection",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "itemId", "category", "width", "height"],
+    "properties": {
+      "id": { "type": "string" },
+      "itemId": { "type": "string" },
+      "title": { "type": "string" },
+      "category": { "type": "string", "enum": ["chair", "table", "lamp", "plant", "decoration"] },
+      "width": { "type": "number", "minimum": 1 },
+      "height": { "type": "number", "minimum": 1 },
+      "interactions": { "type": "array", "items": { "type": "string" } },
+      "defaultState": { "type": "object" }
+    }
+  }
+}

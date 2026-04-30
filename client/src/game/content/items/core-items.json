@@ -1,0 +1,149 @@
+[
+  {
+    "id": "coin",
+    "label": "Coin",
+    "icon": "$",
+    "category": "currency",
+    "rarity": "common",
+    "sellable": false,
+    "sellPrice": 0
+  },
+  {
+    "id": "key",
+    "label": "Anahtar",
+    "icon": "K",
+    "category": "quest-items",
+    "rarity": "uncommon",
+    "sellable": true,
+    "sellPrice": 5
+  },
+  {
+    "id": "giftBox",
+    "label": "Hediye Kutusu",
+    "icon": "G",
+    "category": "quest-items",
+    "rarity": "rare",
+    "sellable": true,
+    "sellPrice": 8
+  },
+  {
+    "id": "coffee",
+    "label": "Kahve",
+    "icon": "C",
+    "category": "consumables",
+    "rarity": "common",
+    "sellable": true,
+    "sellPrice": 2
+  },
+  {
+    "id": "specialGift",
+    "label": "Ozel Hediye",
+    "icon": "S",
+    "category": "quest-items",
+    "rarity": "epic",
+    "sellable": true,
+    "sellPrice": 18
+  },
+  {
+    "id": "goldenKey",
+    "label": "Altin Anahtar",
+    "icon": "Y",
+    "category": "quest-items",
+    "rarity": "epic",
+    "sellable": true,
+    "sellPrice": 14
+  },
+  {
+    "id": "glasses",
+    "label": "Gozluk",
+    "icon": "A",
+    "category": "cosmetics",
+    "rarity": "uncommon",
+    "sellable": false,
+    "sellPrice": 0
+  },
+  {
+    "id": "flower",
+    "label": "Cicek",
+    "icon": "A",
+    "category": "cosmetics",
+    "rarity": "epic",
+    "sellable": false,
+    "sellPrice": 0
+  },
+  {
+    "id": "woodChair",
+    "label": "Ahsap Sandalye",
+    "icon": "S",
+    "category": "chair",
+    "rarity": "common",
+    "sellable": true,
+    "sellPrice": 10,
+    "placeable": true,
+    "texture": "furnitureChair",
+    "furniture": {
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "id": "smallTable",
+    "label": "Kucuk Masa",
+    "icon": "M",
+    "category": "table",
+    "rarity": "common",
+    "sellable": true,
+    "sellPrice": 14,
+    "placeable": true,
+    "texture": "furnitureTable",
+    "furniture": {
+      "width": 2,
+      "height": 1
+    }
+  },
+  {
+    "id": "warmLamp",
+    "label": "Sicak Lamba",
+    "icon": "L",
+    "category": "lamp",
+    "rarity": "rare",
+    "sellable": true,
+    "sellPrice": 22,
+    "placeable": true,
+    "texture": "furnitureLamp",
+    "furniture": {
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "id": "pottedPlant",
+    "label": "Saksili Bitki",
+    "icon": "P",
+    "category": "plant",
+    "rarity": "common",
+    "sellable": true,
+    "sellPrice": 12,
+    "placeable": true,
+    "texture": "furniturePlant",
+    "furniture": {
+      "width": 1,
+      "height": 1
+    }
+  },
+  {
+    "id": "wallPoster",
+    "label": "Duvar Posteri",
+    "icon": "D",
+    "category": "decoration",
+    "rarity": "uncommon",
+    "sellable": true,
+    "sellPrice": 14,
+    "placeable": true,
+    "texture": "furniturePoster",
+    "furniture": {
+      "width": 1,
+      "height": 1
+    }
+  }
+]

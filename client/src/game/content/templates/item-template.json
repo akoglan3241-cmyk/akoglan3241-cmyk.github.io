@@ -1,0 +1,26 @@
+[
+  {
+    "id": "blueShell",
+    "label": "Blue Shell",
+    "icon": "B",
+    "category": "quest-items",
+    "rarity": "uncommon",
+    "sellable": true,
+    "sellPrice": 7
+  },
+  {
+    "id": "cozyLamp",
+    "label": "Cozy Lamp",
+    "icon": "L",
+    "category": "lamp",
+    "rarity": "rare",
+    "sellable": true,
+    "sellPrice": 22,
+    "placeable": true,
+    "texture": "furnitureLamp",
+    "furniture": {
+      "width": 1,
+      "height": 1
+    }
+  }
+]
