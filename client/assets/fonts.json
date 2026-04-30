@@ -1,0 +1,10 @@
+{
+  "main": "Arial",
+  "pixel": "monospace",
+  "sizes": {
+    "small": 12,
+    "medium": 16,
+    "large": 24,
+    "xlarge": 32
+  }
+}

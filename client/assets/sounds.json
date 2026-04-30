@@ -1,0 +1,14 @@
+{
+  "bgm": {
+    "title": "assets/sounds/title.mp3",
+    "game": "assets/sounds/game.mp3",
+    "battle": "assets/sounds/battle.mp3"
+  },
+  "sfx": {
+    "click": "assets/sounds/click.wav",
+    "collect": "assets/sounds/collect.wav",
+    "attack": "assets/sounds/attack.wav",
+    "hit": "assets/sounds/hit.wav",
+    "levelup": "assets/sounds/levelup.wav"
+  }
+}

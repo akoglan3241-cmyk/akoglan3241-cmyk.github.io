@@ -54,6 +54,65 @@
         "y": 8
       }
     ],
-    "tags": ["arcade", "minigame"]
+    "tags": ["arcade", "minigame"],
+    "actions": [
+      {
+        "type": "start-minigame",
+        "miniGameId": "reaction",
+        "label": "Reflex Ring Oyna"
+      }
+    ]
+  },
+  {
+    "id": "pico",
+    "name": "Pico",
+    "role": "minigame-host",
+    "dialogueId": "pico-dialogue",
+    "questLineIds": [],
+    "shops": [],
+    "appearance": {
+      "tint": "0x8fe3a8"
+    },
+    "rooms": [
+      {
+        "roomId": "arcade",
+        "x": 15,
+        "y": 8
+      }
+    ],
+    "tags": ["arcade", "minigame"],
+    "actions": [
+      {
+        "type": "start-minigame",
+        "miniGameId": "collection",
+        "label": "Pocket Cleanup Oyna"
+      }
+    ]
+  },
+  {
+    "id": "duru",
+    "name": "Duru",
+    "role": "minigame-host",
+    "dialogueId": "duru-dialogue",
+    "questLineIds": [],
+    "shops": [],
+    "appearance": {
+      "tint": "0xf0a6ca"
+    },
+    "rooms": [
+      {
+        "roomId": "arcade",
+        "x": 10,
+        "y": 6
+      }
+    ],
+    "tags": ["arcade", "minigame"],
+    "actions": [
+      {
+        "type": "start-minigame",
+        "miniGameId": "memory",
+        "label": "Kart Eslestirme Oyna"
+      }
+    ]
   }
 ]

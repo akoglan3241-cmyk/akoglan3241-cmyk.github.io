@@ -7,6 +7,8 @@ import { IsometricCoordinateDemoScene } from "./scenes/IsometricCoordinateDemoSc
 import { LoginScene } from "./scenes/LoginScene.js";
 import { CollectionMiniGameScene } from "./scenes/CollectionMiniGameScene.js";
 import { ReactionMiniGameScene } from "./scenes/ReactionMiniGameScene.js";
+import { MemoryMiniGameScene } from "./scenes/MemoryMiniGameScene.js";
+import { ReflexClickMiniGameScene } from "./scenes/ReflexClickMiniGameScene.js";
 import { BenimDunyamIsometricSocialScene } from "./scenes/BenimDunyamIsometricSocialScene.js";
 import { TownScene } from "./scenes/TownScene.js";
 
@@ -47,6 +49,8 @@ export const gameConfig = {
     DialogScene,
     ReactionMiniGameScene,
     CollectionMiniGameScene,
+    MemoryMiniGameScene,
+    ReflexClickMiniGameScene,
     IsometricCoordinateDemoScene,
     BenimDunyamIsometricSocialScene,
   ],

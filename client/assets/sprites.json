@@ -1,0 +1,46 @@
+{
+  "player": {
+    "x": 0,
+    "y": 0,
+    "width": 32,
+    "height": 32,
+    "frames": 4
+  },
+  "npc": {
+    "x": 0,
+    "y": 32,
+    "width": 32,
+    "height": 32,
+    "frames": 4
+  },
+  "enemy": {
+    "x": 0,
+    "y": 64,
+    "width": 32,
+    "height": 32,
+    "frames": 4
+  },
+  "items": [
+    {
+      "name": "sword",
+      "x": 0,
+      "y": 96,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "potion",
+      "x": 16,
+      "y": 96,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "shield",
+      "x": 32,
+      "y": 96,
+      "width": 16,
+      "height": 16
+    }
+  ]
+}

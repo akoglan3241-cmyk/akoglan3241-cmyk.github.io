@@ -310,11 +310,13 @@
     "labels": [
       { "x": 5, "y": 2, "text": "Reflex Ring" },
       { "x": 15, "y": 2, "text": "Pocket Cleanup" },
+      { "x": 10, "y": 6, "text": "Memory Match" },
       { "x": 10, "y": 8, "text": "Play Corner" }
     ],
     "npcs": [
       { "id": "nova", "name": "Nova", "x": 5, "y": 8, "tint": "0x72c8ff", "dialog": "Zamanlamani test etmek ister misin?" },
-      { "id": "pico", "name": "Pico", "x": 15, "y": 8, "tint": "0x8fe3a8", "dialog": "Kisa bir toplama turu hep iyi gelir." }
+      { "id": "pico", "name": "Pico", "x": 15, "y": 8, "tint": "0x8fe3a8", "dialog": "Kisa bir toplama turu hep iyi gelir." },
+      { "id": "duru", "name": "Duru", "x": 10, "y": 6, "tint": "0xf0a6ca", "dialog": "Hafizana guveniyor musun? Kartlari eslestir!" }
     ],
     "pickups": [],
     "chests": [],
