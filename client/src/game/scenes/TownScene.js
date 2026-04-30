@@ -983,7 +983,6 @@ export class TownScene extends Phaser.Scene {
     this.staminaText.setText(seatedFurniture ? "Durum: Oturuyor" : movementState.isSprinting ? "Durum: Kosuyor" : "Durum: Geziyor");
     this.updateTimeOfDayHud();
     this.weatherController?.update();
-    this.weatherController?.update();
 
     this.activeNpc = this.getNearestNpc();
     this.activeChest = this.getNearestChest();

@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import { setOutlineHighlight } from "../render/OutlineHighlightPipeline.js";
 import { createGroundShadow } from "../utils/createGroundShadow.js";
 import { logicalToScreen } from "../world/roomUtils.js";
 
@@ -15,6 +16,7 @@ export class TreasureChest extends Phaser.GameObjects.Container {
     this.logicalX = x;
     this.logicalY = y;
     this.isOpened = false;
+    this.isHovered = false;
 
     this.shadow = createGroundShadow(scene, 0, 10, {
       width: 32,
@@ -39,6 +41,16 @@ export class TreasureChest extends Phaser.GameObjects.Container {
     scene.add.existing(this);
   }
 
+  setHovered(isHovered) {
+    this.isHovered = Boolean(isHovered);
+    setOutlineHighlight(this.sprite, this.isHovered && !this.isOpened, {
+      color: 0xffe0a1,
+      thickness: 2.1,
+      softness: 0.24,
+      alpha: 0.84,
+    });
+  }
+
   setPromptVisible(isVisible) {
     this.promptLabel.setVisible(isVisible);
   }
@@ -46,6 +58,7 @@ export class TreasureChest extends Phaser.GameObjects.Container {
   open() {
     this.isOpened = true;
     this.sprite.setTexture("chestOpen");
+    this.setHovered(false);
     this.promptLabel.setVisible(false);
   }
 }
