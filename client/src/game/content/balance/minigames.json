@@ -22,6 +22,29 @@
         { "minScore": 4, "coins": 4, "xp": 8, "rankLabel": "Solid Run" },
         { "minScore": 1, "coins": 2, "xp": 3, "rankLabel": "Warm Up" }
       ]
+    },
+    "memory": {
+      "id": "memory",
+      "roomId": "arcade",
+      "scoreCap": 100,
+      "rewards": [
+        { "minScore": 90, "coins": 12, "xp": 24, "rankLabel": "Memory Master" },
+        { "minScore": 70, "coins": 8, "xp": 16, "rankLabel": "Sharp Mind" },
+        { "minScore": 50, "coins": 5, "xp": 10, "rankLabel": "Good Memory" },
+        { "minScore": 1, "coins": 2, "xp": 4, "rankLabel": "Practice" }
+      ]
+    },
+    "reflex_click": {
+      "id": "reflex_click",
+      "roomId": "arcade",
+      "scoreCap": 100,
+      "rewards": [
+        { "minScore": 50, "coins": 15, "xp": 30, "rankLabel": "Speed Master" },
+        { "minScore": 35, "coins": 10, "xp": 20, "rankLabel": "Very Fast" },
+        { "minScore": 20, "coins": 6, "xp": 12, "rankLabel": "Good Speed" },
+        { "minScore": 10, "coins": 3, "xp": 6, "rankLabel": "Getting Faster" },
+        { "minScore": 1, "coins": 1, "xp": 2, "rankLabel": "Practice" }
+      ]
     }
   }
 }

@@ -20,9 +20,9 @@ export async function findFriendship(userIdA: string, userIdB: string, client?: 
     return memoryFriendships.get(getMemoryFriendshipKey(userIdA, userIdB)) ?? null;
   }
 
-  const executor = client ?? { query: queryDb };
+  const executor = client ?? { query: queryDb<FriendshipRow> };
   const pair = normalizePair(userIdA, userIdB);
-  const result = await executor.query<FriendshipRow>(
+  const result = await executor.query(
     `
       SELECT user_a_id, user_b_id, requested_by_user_id, status
       FROM friendships
@@ -39,8 +39,8 @@ export async function listFriendshipsForUser(userId: string, client?: PoolClient
     return Array.from(memoryFriendships.values()).filter((entry) => entry.user_a_id === userId || entry.user_b_id === userId);
   }
 
-  const executor = client ?? { query: queryDb };
-  const result = await executor.query<FriendshipRow>(
+  const executor = client ?? { query: queryDb<FriendshipRow> };
+  const result = await executor.query(
     `
       SELECT user_a_id, user_b_id, requested_by_user_id, status
       FROM friendships
@@ -65,7 +65,7 @@ export async function saveFriendshipRequest(requesterId: string, targetUserId: s
     return;
   }
 
-  const executor = client ?? { query: queryDb };
+  const executor = client ?? { query: (text: string, params?: unknown[]) => queryDb(text, params) };
   const pair = normalizePair(requesterId, targetUserId);
   await executor.query(
     `
@@ -92,7 +92,7 @@ export async function updateFriendshipStatus(userIdA: string, userIdB: string, s
     return;
   }
 
-  const executor = client ?? { query: queryDb };
+  const executor = client ?? { query: (text: string, params?: unknown[]) => queryDb(text, params) };
   const pair = normalizePair(userIdA, userIdB);
   await executor.query(
     `

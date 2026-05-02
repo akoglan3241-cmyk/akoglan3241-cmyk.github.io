@@ -11,8 +11,26 @@
   "nodes": [
     {
       "id": "default",
-      "text": "Tarzini degistirmek istersen yeni kozmetiklere goz atabilirsin.",
+      "text": "Hafizana guveniyor musun? Kartlari eslestir! Ya da hizini test et!",
       "choices": [
+        {
+          "id": "duru-start-memory",
+          "text": "Kart Eslestirme Oyna",
+          "action": {
+            "type": "start-minigame",
+            "miniGameId": "memory"
+          },
+          "close": true
+        },
+        {
+          "id": "duru-start-reflex",
+          "text": "Hizli Tiklama Oyna",
+          "action": {
+            "type": "start-minigame",
+            "miniGameId": "reflex_click"
+          },
+          "close": true
+        },
         {
           "id": "duru-open-shop",
           "text": "Kozmetikleri goster",
